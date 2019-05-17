@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Open Sans', sans-serif
+}
+
+.upp {
+    text-transform: uppercase
+}
+
+h3,
+h2 {
+    text-align: center;
+    color: #060671;
+    line-height: 1.1
+}
+
+h3 {
+    font-size: 1.38rem
+}
+
+h2 {
+    font-size: 1.5rem
+}
+
+p {
+    padding: 1rem;
+    max-width: 710px;
+    text-align: justify;
+    font-size: 1.34rem;
+    color: #9a9a9a;
+    font-weight: 500
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem
+}
+
+header h1 {
+    margin-top: 1.8rem;
+    text-transform: uppercase;
+    font-size: 1.5em
+}
+
+header spam {
+    font-size: 1.07rem;
+    line-height: 2
+}
+
+header h1,
+header span {
+    display: block;
+    text-align: center;
+    color: #9a9a9a
+}
+
+main {
+    margin-top: 3rem
+}
+
+main .prew {
+    display: block;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 1.5rem
+}
+
+main .connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center
+}
+
+main .connection form {
+    width: 316px;
+    background: #9a9a9a;
+    padding: 0.5rem
+}
+
+main .connection form input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 1.2rem
+}
+
+main .connection form input[type="checkbox"] {
+    display: none
+}
+
+main .connection form label {
+    display: block;
+    font-size: 12px;
+    padding: 0.5rem 0 0.5rem 25px;
+    cursor: pointer
+}
+
+main .connection form label::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    vertical-align: middle;
+    margin-left: -25px;
+    -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s
+}
+
+main .connection form input[type="checkbox"]:checked + label:before {
+    background: #0000ad;
+    content: "✔";
+    color: #fff;
+    text-align: center
+}
+
+main .connection p {
+    width: 316px;
+    background: #2b2bab;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 300
+}
+
+main .connection p .free {
+    font-size: 1.24rem;
+    font-weight: 500
+}
+
+main .diploma {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-top: 2rem
+}
+
+main .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center
+}
+
+main .diplomas {
+    margin-bottom: 2rem
+}
+
+main .diplomas img:hover {
+    -webkit-transition: 1.3s;
+    -o-transition: 1.3s;
+    transition: 1.3s;
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+        transform: scale(2.5)
+}
+
+main .diplomas span {
+    text-align: center;
+    margin: 0.5rem 0;
+    display: block;
+    color: #9a9a9a;
+    font-size: 1.2rem
+}
+
+main .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column
+}
+
+main .info img {
+    margin: 1rem
+}
+
+main adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center
+}
+
+main adress a {
+    margin: 9px 5.4px
+}
+
+main adress a i {
+    background: #9a9a9a;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 0;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s
+}
+
+main adress a i:hover {
+    color: #060671
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    background: #9a9a9a
+}
+
+footer nav {
+    margin-top: 1.5rem;
+    text-align: center
+}
+
+footer nav li {
+    list-style-type: none;
+    line-height: 1.5
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s
+}
+
+footer nav li a:hover {
+    color: #2b2bab
+}
+
+footer span {
+    display: block;
+    padding: 0.5rem 0;
+    color: #fff;
+    font-size: 12px
+}
+
+@media screen and (max-width: 725px) {
+    main .diplomas {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+                align-items: center
+    }
+
+    main .diplomas img {
+        width: 225px;
+        height: 150px
+    }
+
+    main .slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+                align-items: center
+    }
+
+    main .slide img {
+        width: 225px;
+        height: 150px
+    }
+}
