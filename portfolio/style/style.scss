@@ -445,9 +445,8 @@ main {
         margin-left: 75px;
 
         img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
+            width: 270px;
+            height: auto;
             margin-bottom: 2.5rem;
         }
 
@@ -474,6 +473,7 @@ main {
         ul {
             list-style: none;
             margin-bottom: 5rem;
+
             li {
                 font-size: 1.5rem;
                 line-height: 1.5;
@@ -489,7 +489,8 @@ main {
                 font-style: italic;
                 text-align: center;
             }
-            i{
+
+            i {
                 font-size: 1.8rem;
             }
         }
@@ -526,7 +527,8 @@ main {
             height: 80px;
         }
     }
-    main .about ul{
+
+    main .about ul {
         margin: 0 15px;
     }
 }
