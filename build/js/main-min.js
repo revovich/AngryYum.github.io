@@ -1,1 +1,0 @@
-document.querySelector(".home_slider")&&$(document).ready(function(){$(".home_slider").slick({slidesToShow:1,dots:!0})}),(new WOW).init();
