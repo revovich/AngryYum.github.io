@@ -1,265 +1,287 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Живое наследие</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Бренды</title>
 	<link rel="stylesheet" href="css/main.css">
-	
 </head>
+ 
 <body>
-<!--<div class="menu-burger">
+	<div class="menu-burger">
+		<nav>
+			<ul>
+				<li><a href="#">Карта</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Регионы</a>
+				</li>
+				<li><a href="#">Календарь</a></li>
+				<li><a href="#">Маршруты</a></li>
+				<li><a href="#">Еще</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="private">
+			<div class="logo">
+				<a href="#"><img src="img/header_logo.svg" alt="Logo"></a>
+				<a href="#" class="map">Иркутск</a>
+			</div>
+			<div class="bell-wrap">
+				<img src="img/bell.svg" alt="Уведомления" class="bell">
+				<a href="#"><img src="img/MyPhoto.png" alt="Personal Area"></a>
+			</div>
+		</div>
+	</div>
+	<header>
 		<a href="#"><img src="img/header_logo.svg" alt="Logo"></a>
-	<form action="">
-		<input type="text" placeholder="Поиск">
-		<button></button>
-	</form>
-	<nav>
-		<ul>
-			<li><a href="#">Карта</a></li>
-			<li><a href="#">Каталог</a></li>
-			<li><a href="#">Регионы <span>&#8250;</span></a>
-			<ul class="submenu">
-				<li><a href="#">Алтайский край</a></li>
-				<li><a href="#">Архангельская область</a></li>
-				<li><a href="#">Магаданская область</a></li>
-				<li><a href="#">Еврейская автономная область</a></li>
-				<li><a href="#">Брянская область</a></li>
+		<form action="">
+			<input type="text" placeholder="Поиск">
+			<button></button>
+		</form>
+		<nav>
+			<ul>
+				<li><a href="#">Карта</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Регионы <span>&#8250;</span></a>
+					<ul class="submenu">
+						<li><a href="#">Алтайский край</a></li>
+						<li><a href="#">Архангельская область</a></li>
+						<li><a href="#">Магаданская область</a></li>
+						<li><a href="#">Еврейская автономная область</a></li>
+						<li><a href="#">Брянская область</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Календарь</a></li>
+				<li><a href="#">Маршруты</a></li>
+				<li><a href="#">Еще <span>&#8250;</span></a>
+					<ul class="submenu">
+						<li><a href="#">Участие</a></li>
+						<li><a href="#">Избранное</a></li>
+					</ul>
+				</li>
 			</ul>
-			</li>
-			<li><a href="#">Календарь</a></li>
-			<li><a href="#">Маршруты</a></li>
-			<li><a href="#">Еще <span>&#8250;</span></a>
-			<ul class="submenu">
-				<li><a href="#">Участие</a></li>
-				<li><a href="#">Избранное</a></li>
-			</ul>
-			</li>
-		</ul>
-	</nav>
-	<a href="#" class="map">Иркутск</a>
-	<div class="private">
-	<img src="img/bell.svg" alt="Уведомления" class="bell">
-	<a href="#"><img src="img/MyPhoto.png" alt="Personal Area"></a>
-	</div>
-	</div>-->
-<header>
-	<a href="#"><img src="img/header_logo.svg" alt="Logo"></a>
-	<form action="">
-		<input type="text" placeholder="Поиск">
-		<button></button>
-	</form>
-	<nav>
-		<ul>
-			<li><a href="#">Карта</a></li>
-			<li><a href="#">Каталог</a></li>
-			<li><a href="#">Регионы <span>&#8250;</span></a>
-			<ul class="submenu">
-				<li><a href="#">Алтайский край</a></li>
-				<li><a href="#">Архангельская область</a></li>
-				<li><a href="#">Магаданская область</a></li>
-				<li><a href="#">Еврейская автономная область</a></li>
-				<li><a href="#">Брянская область</a></li>
-			</ul>
-			</li>
-			<li><a href="#">Календарь</a></li>
-			<li><a href="#">Маршруты</a></li>
-			<li><a href="#">Еще <span>&#8250;</span></a>
-			<ul class="submenu">
-				<li><a href="#">Участие</a></li>
-				<li><a href="#">Избранное</a></li>
-			</ul>
-			</li>
-		</ul>
-	</nav>
-	<a href="#" class="map">Иркутск</a>
-	<div class="private">
-	<img src="img/bell.svg" alt="Уведомления" class="bell">
-	<a href="#"><img src="img/MyPhoto.png" alt="Personal Area"></a>
-	</div>
-	<div class="burger">
-		<span class="burger-line"></span>
-	</div>
-</header>
-<main>
-	<div class="preview">
-	<div>
-		<h1>Живое наследие</h1>
-		<span>Интерактивная карта локальных</span>
-		<span>культурных брендов России</span>
-		<a href="#" class="btn">Узнать о проекте</a>
-	</div>
-		<div class="slide_preview">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-0">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-1">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-2">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-3">
-			<img src="img//preview_wrap.png" alt="Slide"
-			class="slider__item" id="slide-4">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-5">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-6">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-7">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-8">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item" id="slide-9">
-			<img src="img//preview_wrap.png" alt="Slide" class="slider__item active" id="slide-10">
+		</nav>
+		<a href="#" class="map">Иркутск</a>
+		<div class="private">
+			<img src="img/bell.svg" alt="Уведомления" class="bell">
+			<a href="#"><img src="img/MyPhoto.png" alt="Personal Area"></a>
+		</div>
+		<div class="burger">
+			<span class="burger-line"></span>
+		</div>
+	</header>
+
+	<main class="BrendsPage">
+		<div class="brand-map">
+		<h1 class="headline">Иркутская область</h1>
+		<span>Культурные бренды региона</span>
+		<div class="castom-map-brend">
+		<div id="map"></div>	
 		</div>
 	</div>
-	<ul class="brands">
-		<li><a href="#" class="js-toggle"><img src="img/house.svg" alt="Поселения"><span>Поселения</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/build.svg" alt="Сооружения"> Сооружения</a></li>
-		<li><a href="#" class="js-toggle"><img src="img/tree.svg" alt="Природа"> <span>Природа</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/traditions.svg" alt="Традиции"><span>Традиции <br>и промыслы</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/day.svg" alt="Календарь"><span>Даты <br>и события</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/man.svg" alt="Человек"><span>Персоны</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/samovar.svg" alt="Самовар"><span>Гастрономия</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/form.svg" alt="Образы"><span>Образы</span></a></li>
-		<li><a href="#" class="js-toggle"><img src="img/art.svg" alt="Искуство"><span>Арт-кластеры</span></a></li>
-	</ul>
-	<div class="animate-map">
-		<div class="castom-map">
-		<div class="wrap"></div>
-			<a href="#" class="btn">Открыть карту</a>
-		</div>
-		<div class="arows">
-					<button class="map_left"></button>
-					<button class="map_right"></button>
-		</div>
-			<div class="slider-map active"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>
-						<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>			<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>			<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>			<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>			<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>			<div class="slider-map"> 
-			<img src="img//mini-slide.png" alt="Слайд">
-			<div class="content">
-			<img src="img/art.svg" alt="Иску">
-				<span>Арт-кластеры</span>
-				<b>Дизайн-завод Flacon <br> Название в 2 строчки</b>
-			</div>
-		</div>
-			
-		</div>
-	<div class="share">
+		<div class="header">
 			<div>
-				<h2 class="headline">Участине</h2>
-		<p class="info">В ходе реализации проекта при поддержке местных властей в семи пилотных регионах будет проведена интенсивная исследовательская работа по выявлению и продвижению локальных брендов.</p>
-		<a href="#" class="btn">Узнать больше</a>
+				<h2>Список брендов региона</h2><span>Всего: 3 875 культурный бренда</span>
 			</div>
+			<form action="" class="filter">
+				<div class="select">
+					<div class="selectBtn" data-type="firstOption">Все бренды</div>
+					<div class="selectDropdown scrollable">
+						<div class="option" data-type="firstOption">Тип 1</div>
+						<div class="option" data-type="secondOption">Тип 3</div>
+						<div class="option" data-type="thirdOption">Тип 3</div>
+						<div class="option" data-type="secondOption">Тип 3</div>
+						<div class="option" data-type="thirdOption">Тип 3</div>
+						<div class="option" data-type="secondOption">Тип 3</div>
+						<div class="option" data-type="thirdOption">Тип 3</div>
+					</div>
+				</div>
+				<div class="select">
+					<div class="selectBtn" data-type="firstOption">Сортировать по бренду</div>
+					<div class="selectDropdown  scroll">
+						<div class="option" data-type="firstOption">Тип 1</div>
+						<div class="option" data-type="secondOption">Тип 2</div>
+						<div class="option" data-type="thirdOption">Тип 3</div>
+					</div>
+				</div>
+				<div class="btn-filter-wrap"><button class="btn-filter"></button></div>
+			</form>
+		</div>
+		<div class="cards">
+			<div class="card">
+				<img src="img/brendcard.png" alt="">
+				<div class="left">
+					<span class="card_grey prev">Соружения</span>
+					<div class="content card_border_grey">
+						<div class="header">
+							<h3>Музей «Тальцы»</h3>
+							<div class="rating">
+								<div class="rating-item" data-rate="5"></div>
+								<div class="rating-item" data-rate="4"></div>
+								<div class="rating-item" data-rate="3"></div>
+								<div class="rating-item" data-rate="2"></div>
+								<div class="rating-item active" data-rate="1"></div>
+							</div>
+							<span>3.1/150</span>
+						</div>
+						<span class="prev_header">Иркутская область, Бурятия</span>
+						<p>Архитектурно-этнографический музей «Тальцы» – уникальное собрание памятников истории, архитектуры и этнографии XVII–XX вв. Музейный комплекс под открытым небом привлекает посетителей возможностью непосредственного знакомства с материальной и духовной культурой народов Прибайкалья.</p>
+						<div class="footer">
+							<span class="views">540</span>
+							<span class="comment">21</span>
+							<span class="like">8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/brendcard.png" alt="">
+				<div class="left">
+					<span class="card_grey prev">Соружения</span>
+					<div class="content card_border_grey">
+						<div class="header">
+							<h3>Музей «Тальцы»</h3>
+							<div class="rating">
+								<div class="rating-item" data-rate="5"></div>
+								<div class="rating-item" data-rate="4"></div>
+								<div class="rating-item" data-rate="3"></div>
+								<div class="rating-item" data-rate="2"></div>
+								<div class="rating-item active" data-rate="1"></div>
+							</div>
+							<span>3.1/150</span>
+						</div>
+						<span class="prev_header">Иркутская область, Бурятия</span>
+						<p>Архитектурно-этнографический музей «Тальцы» – уникальное собрание памятников истории, архитектуры и этнографии XVII–XX вв. Музейный комплекс под открытым небом привлекает посетителей возможностью непосредственного знакомства с материальной и духовной культурой народов Прибайкалья.</p>
+						<div class="footer">
+							<span class="views">540</span>
+							<span class="comment">21</span>
+							<span class="like">8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/brendcard.png" alt="">
+				<div class="left">
+					<span class="card_grey prev">Соружения</span>
+					<div class="content card_border_grey">
+						<div class="header">
+							<h3>Музей «Тальцы»</h3>
+							<div class="rating">
+								<div class="rating-item" data-rate="5"></div>
+								<div class="rating-item" data-rate="4"></div>
+								<div class="rating-item" data-rate="3"></div>
+								<div class="rating-item" data-rate="2"></div>
+								<div class="rating-item active" data-rate="1"></div>
+							</div>
+							<span>3.1/150</span>
+						</div>
+						<span class="prev_header">Иркутская область, Бурятия</span>
+						<p>Архитектурно-этнографический музей «Тальцы» – уникальное собрание памятников истории, архитектуры и этнографии XVII–XX вв. Музейный комплекс под открытым небом привлекает посетителей возможностью непосредственного знакомства с материальной и духовной культурой народов Прибайкалья.</p>
+						<div class="footer">
+							<span class="views">540</span>
+							<span class="comment">21</span>
+							<span class="like">8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/brendcard.png" alt="">
+				<div class="left">
+					<span class="card_purpur prev">гастрономия</span>
+					<div class="content card_border_purpur">
+						<div class="header">
+							<h3>Ресторан «Охотников»</h3>
+							<div class="rating">
+								<div class="rating-item" data-rate="5"></div>
+								<div class="rating-item" data-rate="4"></div>
+								<div class="rating-item" data-rate="3"></div>
+								<div class="rating-item" data-rate="2"></div>
+								<div class="rating-item active" data-rate="1"></div>
+							</div>
+							<span>3.1/150</span>
+						</div>
+						<span class="prev_header">Иркутская область, Бурятия</span>
+						<p>Уютный и гостеприимный ресторан, который входит в ТОП100 лучших ресторанов России (по версии P.R.R.), приятно удивит уровнем сервиса и фирменной подачей блюд из дикого мяса. Персонал ресторана постоянно проходит обучение на соответствие требованиям высокого сервиса.</p>
+						<div class="footer">
+							<span class="views">540</span>
+							<span class="comment">21</span>
+							<span class="like">8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/brendcard.png" alt="">
+				<div class="left">
+					<span class="card_lightGreen prev">Природа</span>
+					<div class="content card_border_lightGreen">
+						<div class="header">
+							<h3>Горная цепь «Хамар-Дабан»</h3>
+							<div class="rating">
+								<div class="rating-item" data-rate="5"></div>
+								<div class="rating-item" data-rate="4"></div>
+								<div class="rating-item" data-rate="3"></div>
+								<div class="rating-item" data-rate="2"></div>
+								<div class="rating-item active" data-rate="1"></div>
+							</div>
+							<span>3.1/150</span>
+						</div>
+						<span class="prev_header">Иркутская область, Бурятия</span>
+						<p>Хамар-Дабан — древнейший массив планеты, протянувшийся с запада на восток более чем на 350 км, образующий горную страну на юге Байкала. Ширина — 80 км, высота вершины — 2396 м, расположен на территории Иркутской области и Бурятии. Высшая точка – 2371 м – гора Хан-Ула, что переводится...</p>
+						<div class="footer">
+							<span class="views">540</span>
+							<span class="comment">21</span>
+							<span class="like">8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn-download">Показать больше</button>
+	</main>
+
+	<footer>
+		<a href="#"><img src="img/header_logo.svg" alt="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Команда</a></li>
+				<li><a href="#">Партнеры</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Поддержка</a></li>
+				<li><a href="#">Обратная связь</a></li>
+				<li><a href="#">Учасники сети</a></li>
+			</ul>
+		</nav>
+		<form action="">
+			<span>Подпишись на нашу рассылку и будь в курсе всех новостей</span>
+			<div class="form">
+				<input type="email" placeholder="Введите e-mail">
+				<button class="btn">Подписаться</button>
+			</div>
+			<input type="checkbox" checked="checked" id="email_check">
+			<label for="email_check">Я даю согласие на обработку своих персональных данных</label>
+		</form>
+	</footer>
+	<div class="copy">
+		<div>
+			<span>© 2019 г. «Живое наследие». Все права защищены.</span>
+			<b>Политика конфиденциальности</b>
+		</div>
+		<div class="web">
+			<img src="img/footer-logo.svg" alt="Лого">
+			<span>Дизайн сделан <br>в <b>«Бермудах» </b>в 2019 году </span>
+		</div>
 	</div>
-	<div class="news">
-	<h2 class="headline">Новости</h2>
-		<div class="news-wrap">
-			<div class="big-news">
-		<img src="img/news_one.png" alt="Новость">
-		<h3>Майские праздники: идеи на каждый день</h3>
-		<p>Как не упустить майские праздники? Всё просто: выбирайте подходящую дату и нажимайте на флип-карточку — мы подскажем, как сделать каждый день праздников идеальным. Еще больше идей ищите в нашем спецпроекте</p>
-		<a href="#" class="btn">Большеновостей</a>
-		<ul class="social">
-			<li><a href="#" class="vk"><span>Подписаться</span></a></li>
-			<li><a href="#" class="you"><span>Подписаться</span></a></li>
-			<li><a href="#" class="inst"><span>Подписаться</span></a></li>
-			<li><a href="#" class="f"><span>Подписаться</span></a></li>
-		</ul>
-		</div>
-		<div class="mini-news">
-			<div class="item">
-				<img src="img/news1.png" alt="Новость">
-				<h3>Составлен рейтинг городов с самой вкусной выпечкой</h3>
-				<p>Сервис Tvil.ru провёл опрос туристов, чтобы узнать, где, по их мнению, делают самые вкусные десерты.</p>
-			</div>
-			<div class="item">
-				<img src="img/news2.png" alt="Новость">
-				<h3>В России хотят запретить одноразовую посуду</h3>
-				<p>Минприроды вслед за многими другими странами мира выступила за сокращение использования пластика. В частности, в России тоже могут...</p>
-			</div>
-			<div class="item">
-				<img src="img/news3.png" alt="Новость">
-				<h3>Стюардесса рассказала, как выбрать комфортный рейс</h3>
-				<p>Пассажирам, которым важен комфорт и чистота салона, лучше покупать билеты на утренние перелёты. Бывшая стюардесса...</p>
-			</div>
-			<div class="item">
-				<img src="img/news4.png" alt="Новость">
-				<h3>Интересные концерты уик-энда</h3>
-				<p>Сервис Tvil.ru провёл опрос туристов, чтобы узнать, где, по их мнению, делают самые вкусные десерты.</p>
-			</div>
-		</div>
-		</div>
-	</div>
-</main>
- <footer>
- 	<a href="#"><img src="img/header_logo.svg" alt="logo"></a>
- 	<nav>
- 		<ul>
- 			<li><a href="#">О проекте</a></li>
- 			<li><a href="#">Команда</a></li>
- 			<li><a href="#">Партнеры</a></li>
- 		</ul>
- 		<ul>
- 			<li><a href="#">Поддержка</a></li>
- 			<li><a href="#">Обратная связь</a></li>
- 			<li><a href="#">Учасники сети</a></li>
- 		</ul>
- 	</nav>
- 	 		<form action="">
- 			<span>Подпишись на нашу рассылку и будь в курсе всех новостей</span>
- 			<div class="form">
- 				<input type="email" placeholder="Введите e-mail">
- 			<button class="btn">Подписаться</button>
- 			</div>
- 			<input type="checkbox" id="email_check">
- 			<label for="email_check">Я даю согласие на обработку своих персональных данных</label>
- 		</form>
- </footer>
- <div class="copy">
- 				<div>
- 					<span>© 2019 г. «Живое наследие». Все права защищены.</span>
- 				<b>Политика конфиденциальности</b>
- 				</div>
- 				<div class="web">
- 					<img src="img/footer-logo.svg" alt="Лого">
- 					<span>Дизайн сделан <br>в <b>«Бермудах» </b>в 2019 году </span>
- 				</div>
- 			</div>
- 			<script src="js/perfect-scrollbar.js"></script>
-  <script src="js/main.js"></script>
-  
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=0910941b-6acb-4fe1-b762-9d56ee403508&lang=ru_RU" type="text/javascript">
+    </script>
+    	<script src="js/map.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
