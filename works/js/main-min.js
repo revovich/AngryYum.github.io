@@ -1,1 +1,1 @@
-document.querySelector(".home_slider")&&$(document).ready(function(){$(".home_slider").slick({slidesToShow:1,dots:!0})}),(new WOW).init();
+$(document).ready(function(){document.querySelector(".home_slider")&&$(document).ready(function(){$(".home_slider").slick({slidesToShow:1,dots:!0})}),$(".subMenu").hover(function(){$(this).fadeOut(500)})});
