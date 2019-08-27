@@ -1,0 +1,166 @@
+#bait {
+    width: 100%;
+    padding: 0 0 0 19.53vw;
+    margin-bottom: 100px;
+    background: url('../images/mob/f_17.png') no-repeat left center;
+    background-size: 277px;
+}
+
+#bait h2 {
+    font-family: "UniSansBold";
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+#bait h3 {
+    font-family: "SegoeUI-Light";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    
+    margin-bottom: 15px;
+}
+
+#bait .bonuses {
+    margin-bottom: 60px;
+}
+
+#bait .bonus {
+    max-width: 190px;
+    margin-right: 10px;
+    padding: 0 14px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#bait .bonus .number {
+    width: 112px;
+    height: 99px;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "UniSansBold";
+    color: #336051;
+    
+    padding: 5px 0 0 5px;
+    
+    background-image: url('../images/bonus_number_pc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bait .bonus p {
+    
+    font-size: 16px;
+    font-family: "SegoeUI-Light";
+    text-align: center;
+}
+
+#bait .bonus p b {
+    font-family: "SegoeUI-Bold";
+}
+
+#bait .button-container {
+    position: relative;
+    width: 433px;
+    cursor: pointer;
+}
+
+#bait .button-container .button {
+    position: relative;
+    
+    width: 433px;
+    height: 97px;
+    padding: 0 40px;
+    
+    box-shadow: 0 0.875rem 2.375rem rgba(241, 179, 75, 0.64), 0 0.375rem 0 #c98b51, inset 0 0.125rem 0.125rem rgba(255, 246, 229, 0.43), inset 0 -0.125rem 0.188rem rgba(244, 210, 154, 0.43);;
+    border-radius: 49px;
+    background-image: linear-gradient(to top, #ebbb6d 0%, #ffb945 100%);
+    box-shadow: 0 0.875rem 2.375rem rgba(241, 179, 75, 0.64), 0 0.375rem 0 #c98b51, inset 0 0.125rem 0.125rem rgba(255, 246, 229, 0.43), inset 0 -0.125rem 0.188rem rgba(244, 210, 154, 0.43);    color: #336051;
+    font-family: "SegoeUI-Bold";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 97px;
+    text-transform: uppercase;
+    
+    overflow: hidden;
+}
+
+@keyframes slideme {
+    0% {
+        left: -30px;
+        margin-left: 0
+    }
+    30% {
+        left: 110%;
+        margin-left: 80px
+    }
+    100% {
+        left: 110%;
+        margin-left: 80px
+    }
+}
+
+#bait .button-container .button::before {
+/*    z-index: 999;*/
+/*    box-sizing: border-box;*/
+    margin-left: -30px;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 300px;
+    background: #fff;
+    -webkit-animation-delay: .05s;
+    animation-delay: .05s;
+    position: absolute;
+/*    left: -100px;*/
+    top: -100px;
+    top-animation-timing-function: ease-in-out;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#bait .button-container img {
+    position: absolute;
+    top: -45px;
+    right: -100px;
+    
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+#bait .button-container:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
