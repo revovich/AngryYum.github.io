@@ -1,0 +1,1 @@
+$(function(){$(".mini-menu").click(function(){$(this).toggleClass("mini-menu-active"),$(".menu").toggleClass("menu-active")}),$(".product-desc a").hover(function(){$(this).toggleClass("line_active")}),$(".menu a").click(function(e){e.preventDefault(),$(".menu").slideUp();let t=$(this).attr("href");$("html,body").animate({scrollTop:$(t).offset().top},1e3)})});
