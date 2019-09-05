@@ -29,39 +29,31 @@ $('.news_wrap_btn').click(function () {
 });
 
 
-ymaps.ready(init);
+const items = [
+  { coord: [ 55.751244, 37.618423 ], title: 'Moscow' },
+  { coord: [ 48.864716, 2.349014 ], title: 'Paris' },
+  { coord: [ 34.052235, -118.243683 ], title: 'Los Angeles' },
+];
 
-function init () {
-  var Y = 55.76;
-  var X = 37.64;
+ymaps.ready(function () {
+  const map = new ymaps.Map('map', {
+    zoom: 9,
+    center: items[0].coord,
+    controls: [],
+  });
 
-    var myMap = new ymaps.Map('map', {
-            center: [Y, X],
-            zoom: 10
-        },
-        $('#One').click(function(){
-         var X =+  30;
-         alert(X)
-        }),
-        {
-            searchControlProvider: 'yandex#search'
-        }),
-        objectManager = new ymaps.ObjectManager({
-            // Чтобы метки начали кластеризоваться, выставляем опцию.
-            clusterize: true,
-            // ObjectManager принимает те же опции, что и кластеризатор.
-            gridSize: 32,
-            clusterDisableClickZoom: true
-        });  
+  items.forEach(n => map.geoObjects.add(new ymaps.Placemark(n.coord)));
 
-    // Чтобы задать опции одиночным объектам и кластерам,
-    // обратимся к дочерним коллекциям ObjectManager.
-    objectManager.objects.options.set('preset', 'islands#greenDotIcon');
-    objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
-    myMap.geoObjects.add(objectManager);
-    $.ajax({
-        url: "js/data.json"
-    }).done(function(data) {
-        objectManager.add(data);
-    });
-  }
+
+  const buttons = document.querySelector('#buttons');
+
+  buttons.innerHTML = items.map(n =>
+    `<button data-coord="${JSON.stringify(n.coord)}">${n.title}</button>`
+  ).join('');
+
+  buttons.addEventListener('click', ({ target: { dataset: { coord } } }) => {
+    if (coord) {
+      map.setCenter(JSON.parse(coord));
+    }
+  });
+});
