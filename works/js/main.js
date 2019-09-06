@@ -27,33 +27,81 @@ $('.news_wrap_btn').click(function () {
   $('.sidebar').toggleClass('sidebar_wrap_active');
   $(this).toggleClass('news_wrap_btn_active')
 });
+$('.yandexMap_adress_btn').click(function(){
+  $(this).toggleClass('yandexMap_adress_btn_active');
+  $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
+})
+$('.contact_item_title').click(function(){
+  $('.yandexMap_adress_btn').toggleClass('yandexMap_adress_btn_active');
+  $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
+})
 
-
-const items = [
-  { coord: [ 55.751244, 37.618423 ], title: 'Moscow' },
-  { coord: [ 48.864716, 2.349014 ], title: 'Paris' },
-  { coord: [ 34.052235, -118.243683 ], title: 'Los Angeles' },
-];
-
-ymaps.ready(function () {
-  const map = new ymaps.Map('map', {
-    zoom: 9,
-    center: items[0].coord,
-    controls: [],
+if(document.querySelector('#map')){
+  ymaps.ready(function () {
+  
+    var myMap = new ymaps.Map('map', {
+            center: [55.73973206899513,37.60550799999995],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        objectManager = new ymaps.ObjectManager({
+          // Чтобы метки начали кластеризоваться, выставляем опцию.
+          clusterize: true,
+          // ObjectManager принимает те же опции, что и кластеризатор.
+          gridSize: 32,
+          clusterDisableClickZoom: true
+      });
+  // Чтобы задать опции одиночным объектам и кластерам,
+  // обратимся к дочерним коллекциям ObjectManager.
+  objectManager.objects.options.set('preset', 'islands#greenDotIcon');
+  objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
+  myMap.geoObjects.add(objectManager);
+  $.ajax({
+      url: "js/data.json"
+  }).done(function(data) {
+      objectManager.add(data);
   });
-
-  items.forEach(n => map.geoObjects.add(new ymaps.Placemark(n.coord)));
-
-
-  const buttons = document.querySelector('#buttons');
-
-  buttons.innerHTML = items.map(n =>
-    `<button data-coord="${JSON.stringify(n.coord)}">${n.title}</button>`
-  ).join('');
-
-  buttons.addEventListener('click', ({ target: { dataset: { coord } } }) => {
-    if (coord) {
-      map.setCenter(JSON.parse(coord));
+  myMap.controls.remove('geolocationControl');
+  myMap.controls.remove('searchControl');
+  myMap.controls.remove('trafficControl');
+  myMap.controls.remove('typeSelector');
+  myMap.controls.remove('fullscreenControl');
+  myMap.controls.remove('rulerControl');
+  myMap.behaviors.disable(['scrollZoom']);
+        $('#Moscow').click(function(){
+          myMap.setCenter([ 55.73973206899513,37.60550799999995], 13, {
+            checkZoomRange: true
+        });
+        });
+        $('#Buzuluk').click(function(){
+          myMap.setCenter([ 53.75672207079035,41.02551099999998], 14, {
+            checkZoomRange: true
+        });
+        });
+        $('#Tyumen').click(function(){
+          myMap.setCenter([ 52.93639757143206,102.79593349999993], 14, {
+            checkZoomRange: true
+        });
+        });
+  });
+}
+if(document.querySelector('.wow')){
+  var wow = new WOW(
+    {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       true,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
     }
-  });
-});
+  );
+  wow.init();
+}
+
+
