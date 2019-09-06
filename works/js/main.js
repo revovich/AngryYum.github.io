@@ -52,10 +52,8 @@ if(document.querySelector('#map')){
           gridSize: 32,
           clusterDisableClickZoom: true
       });
-myMap.behaviors.disable('scrollZoom');
- if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    myMap.behaviors.disable('drag');
-}
+      map.behaviors.disable('multiTouch');
+      map.behaviors.disable('drag');
   objectManager.objects.options.set('preset', 'islands#greenDotIcon');
   objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
   myMap.geoObjects.add(objectManager);
