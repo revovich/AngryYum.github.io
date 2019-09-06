@@ -42,7 +42,6 @@ if(document.querySelector('#map')){
     var myMap = new ymaps.Map('map', {
             center: [55.73973206899513,37.60550799999995],
             zoom: 13,
-            croll: false,
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -53,8 +52,10 @@ if(document.querySelector('#map')){
           gridSize: 32,
           clusterDisableClickZoom: true
       });
-  // Чтобы задать опции одиночным объектам и кластерам,
-  // обратимся к дочерним коллекциям ObjectManager.
+myMap.behaviors.disable('scrollZoom');
+ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    myMap.behaviors.disable('drag');
+}
   objectManager.objects.options.set('preset', 'islands#greenDotIcon');
   objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
   myMap.geoObjects.add(objectManager);
