@@ -52,8 +52,6 @@ if(document.querySelector('#map')){
           gridSize: 32,
           clusterDisableClickZoom: true
       });
-      map.behaviors.disable('multiTouch');
-      map.behaviors.disable('drag');
   objectManager.objects.options.set('preset', 'islands#greenDotIcon');
   objectManager.clusters.options.set('preset', 'islands#greenClusterIcons');
   myMap.geoObjects.add(objectManager);
@@ -84,6 +82,15 @@ if(document.querySelector('#map')){
             checkZoomRange: true
         });
         });
+
+//отключаем зум колёсиком мышки
+myMap.behaviors.disable('scrollZoom');
+ 
+//на мобильных устройствах... (проверяем по userAgent браузера)
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    //... отключаем перетаскивание карты
+    myMap.behaviors.disable('drag');
+}
   });
 }
 if(document.querySelector('.wow')){
