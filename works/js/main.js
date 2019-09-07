@@ -30,12 +30,21 @@ $('.news_wrap_btn').click(function () {
 $('.yandexMap_adress_btn').click(function(){
   $(this).toggleClass('yandexMap_adress_btn_active');
   $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
-})
+});
 $('.contact_item_title').click(function(){
   $('.yandexMap_adress_btn').toggleClass('yandexMap_adress_btn_active');
   $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
 })
-
+$('.menu_item').has('.subMenu').hover(function(){
+  $(this).addClass('subMenu_active')
+});
+$(document).mouseup(function (e){
+  var div = $(".subMenu_active");
+  if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+        div.removeClass('subMenu_active')
+  }
+});
 if(document.querySelector('#map')){
   ymaps.ready(function () {
   
