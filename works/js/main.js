@@ -98,7 +98,7 @@ if(document.querySelector('.wow')){
     {
       boxClass:     'wow',      // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)
-      offset:       200,          // distance to the element when triggering the animation (default is 0)
+      offset:       15,          // distance to the element when triggering the animation (default is 0)
       mobile:       false,       // trigger animations on mobile devices (default is true)
       live:         true, 
       delay:        20,      // act on asynchronously loaded content (default is true)
@@ -112,4 +112,18 @@ if(document.querySelector('.wow')){
   wow.init();
 }
 
+jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var cont = $('.timeLine_item_footer');
+    if (!cont.hasClass('TimeLineEnd')) {
+      var wh = $(this).height();
+      var topOffset = cont.offset().top - $(this).scrollTop();
+      var visible = (topOffset <= wh) && (topOffset + cont.height() > 0);
+      if (visible) {
+        cont.addClass('timeLine_item_footer_anim');
+        console.log('Visible!!!');
+      }
+    }
+  });
+});
 
