@@ -20,7 +20,9 @@ $(document).ready(function () {
 $('.nav_btn').click(function () {
   $('nav').toggleClass('nav_btn_active');
   $('.nav_btn_line').toggleClass('nav_btn_line_active');
-  $('body').toggleClass('noscroll');
+  $('.header').toggleClass('header_active_menu');
+  $('main').toggleClass('dn');
+  $('footer').toggleClass('dn');
 });
 $('.news_wrap_btn').click(function () {
   $('.sidebar_wrap').toggleClass('sidebar_wrap_active');
@@ -35,8 +37,8 @@ $('.contact_item_title').click(function(){
   $('.yandexMap_adress_btn').toggleClass('yandexMap_adress_btn_active');
   $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
 })
-$('.menu_item').has('.subMenu').hover(function(){
-  $(this).addClass('subMenu_active')
+$('.menu_item').has('.subMenu').click(function(){
+  $(this).toggleClass('subMenu_active')
 });
 $(document).mouseup(function (e){
   var div = $(".subMenu_active");
