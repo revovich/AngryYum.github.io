@@ -37,8 +37,11 @@ $('.contact_item_title').click(function(){
   $('.yandexMap_adress_btn').toggleClass('yandexMap_adress_btn_active');
   $('.yandexMap_adress').toggleClass('yandexMap_adress_wrap');
 })
-$('.menu_item').has('.subMenu').click(function(){
-  $(this).toggleClass('subMenu_active')
+$('.menu_item').has('.subMenu').hover(function(){
+  $(this).addClass('subMenu_active')
+});
+$('.menu_item a').click(function(e) {
+    e.preventDefault();
 });
 $(document).mouseup(function (e){
   var div = $(".subMenu_active");
@@ -121,19 +124,17 @@ if(document.querySelector('.wow')){
   );
   wow.init();
 }
-
-jQuery(document).ready(function($) {
-  $(window).scroll(function() {
-    var cont = $('.timeLine_item_footer');
-    if (!cont.hasClass('TimeLineEnd')) {
-      var wh = $(this).height();
-      var topOffset = cont.offset().top - $(this).scrollTop();
-      var visible = (topOffset <= wh) && (topOffset + cont.height() > 0);
-      if (visible) {
-        cont.addClass('timeLine_item_footer_anim');
-        console.log('Visible!!!');
-      }
+$(window).scroll(function() {
+  var cont = $('.timeLine_item_footer');
+  if (!cont.hasClass('TimeLineEnd')) {
+    var wh = $(this).height();
+    var topOffset = cont.offset().top - $(this).scrollTop();
+    var visible = (topOffset <= wh) && (topOffset + cont.height() > 0);
+    if (visible) {
+      cont.addClass('timeLine_item_footer_anim');
+      console.log('Visible!!!');
     }
-  });
+  }
 });
+
 
