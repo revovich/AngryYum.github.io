@@ -23,6 +23,7 @@ $('.nav_btn').click(function () {
   $('.header').toggleClass('header_active_menu');
   $('main').toggleClass('dn');
   $('footer').toggleClass('dn');
+  $(this).toggleClass('shows');
 });
 $('.news_wrap_btn').click(function () {
   $('.sidebar_wrap').toggleClass('sidebar_wrap_active');
@@ -40,9 +41,7 @@ $('.contact_item_title').click(function(){
 $('.menu_item').has('.subMenu').hover(function(){
   $(this).addClass('subMenu_active')
 });
-$('.menu_item a').click(function(e) {
-    e.preventDefault();
-});
+$('.menu_item').has('.subMenu').addClass('menu_arrow');
 $(document).mouseup(function (e){
   var div = $(".subMenu_active");
   if (!div.is(e.target)
