@@ -135,5 +135,9 @@ $(window).scroll(function() {
     }
   }
 });
-
+$(function () {
+  $('.menu_item').has('.subMenu').on("click", function (e) {
+      e.preventDefault();
+  });
+});
 
