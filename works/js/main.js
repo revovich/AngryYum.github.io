@@ -18,7 +18,7 @@ $(document).ready(function () {
   }
 });
 $('.nav_btn').click(function () {
-  $('nav').toggleClass('nav_btn_active');
+  $('.nav_menu').toggleClass('nav_menu_active');
   $('.nav_btn_line').toggleClass('nav_btn_line_active');
   $('.header').toggleClass('header_active_menu');
   $('main').toggleClass('dn');
