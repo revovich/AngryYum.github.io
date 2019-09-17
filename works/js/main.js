@@ -164,3 +164,8 @@ if(document.querySelector('.dark_wrap')){
       });
     });
 }
+document.documentElement.addEventListener('touchmove', function (event) {
+  event.preventDefault();      
+}, false);document.documentElement.addEventListener('touchmove', function (event) {
+    event.preventDefault();      
+}, false);
