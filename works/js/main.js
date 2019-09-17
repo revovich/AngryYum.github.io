@@ -140,4 +140,19 @@ $(function () {
       e.preventDefault();
   });
 });
-
+if(document.querySelector('.dark_wrap')){
+  $('.next_block_header').click(function(){
+    $('.wrap_photo').addClass('wrap_foto_active');
+    $('.dark_wrap').addClass('wrap_foto_active');
+  });
+  $('.dark_wrap').click(function(){
+    $('.wrap_photo').removeClass('wrap_foto_active');
+    $(this).removeClass('wrap_foto_active');
+  });
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'disableScrolling': true,
+    'showImageNumberLabel': false
+  });
+}
