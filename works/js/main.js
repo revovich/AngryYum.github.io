@@ -160,14 +160,7 @@ if(document.querySelector('.dark_wrap')){
               autoplay: true,
               autoplaySpeed: 3000,
             }
-          }],
-          responsive: [
-            {
-              breakpoint: 614,
-              settings: {
-                arrows: false,
-              }
-            }]
+          }]
       });
     });
 }
