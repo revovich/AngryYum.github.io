@@ -142,17 +142,32 @@ $(function () {
 });
 if(document.querySelector('.dark_wrap')){
   $('.next_block_header').click(function(){
-    $('.wrap_photo').addClass('wrap_foto_active');
+    $('.wrap_photo').addClass('wrap_fotot_active');
     $('.dark_wrap').addClass('wrap_foto_active');
   });
   $('.dark_wrap').click(function(){
-    $('.wrap_photo').removeClass('wrap_foto_active');
+    $('.wrap_photo').removeClass('wrap_fotot_active');
     $(this).removeClass('wrap_foto_active');
   });
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'disableScrolling': true,
-    'showImageNumberLabel': false
-  });
+      $(document).ready(function () {
+      $('.photo_slider').slick({
+        slidesToShow: 1,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              autoplay: true,
+              autoplaySpeed: 3000,
+            }
+          }],
+          responsive: [
+            {
+              breakpoint: 614,
+              settings: {
+                arrows: false,
+              }
+            }]
+      });
+    });
 }
