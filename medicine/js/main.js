@@ -55,19 +55,23 @@ $('#form_popap').click(function(){
 $('.wrap_form_header_close').click(function(){
   $('.content_wrpper').removeClass('content_wrpper_active')
   $('.wrap_form').removeClass('wrap_form_active');
+  $('body').css('overflow' , 'auto');
 });
 $('.wrap_form_form_btn').click(function(){
   $('.content_wrpper').removeClass('content_wrpper_active')
   $('.wrap_form').removeClass('wrap_form_active');
+  $('body').css('overflow' , 'auto');
 });
 $('.content_wrpper').click(function(){
   $('.content_wrpper').removeClass('content_wrpper_active')
   $('.wrap_form').removeClass('wrap_form_active');
+  $('body').css('overflow' , 'auto');
 });
 
 $('.team_wrap_card_item_btn').click(function(){
   $('.content_wrpper').addClass('content_wrpper_active');
   $('.top_wrap_team').addClass('wrap_form_active');
+  $('body').css('overflow' , 'hidden');
 })
 $('.wrap_form_header_close').click(function(){
   $('.top_wrap_team').removeClass('wrap_form_active');
@@ -75,13 +79,29 @@ $('.wrap_form_header_close').click(function(){
 $('.wrap_team_btn').click(function(){
   $('.top_wrap_team').removeClass('wrap_form_active');
   $('.content_wrpper').removeClass('content_wrpper_active');
+  $('body').css('overflow' , 'auto');
 });
 $('.content_wrpper').click(function(){
   $('.top_wrap_team').removeClass('wrap_form_active');
   $('.content_wrpper').removeClass('content_wrpper_active');
+  $('body').css('overflow' , 'auto');
 });
 
 $('.btn_nav_wrapper').click(function(){
   $('.btn_nav').toggleClass('btn_nav_active');
   $('.header_bot').toggleClass('header_bot_active')
-})
+});
+
+$(function() {
+  $("ul.doctor_caption").on("click", "li:not(.doctor_active)", function() {
+    $(this)
+      .addClass("doctor_active")
+      .siblings()
+      .removeClass("doctor_active")
+      .closest(".doctor_wrap")
+      .find(".doctor_item")
+      .removeClass("doctor_active")
+      .eq($(this).index())
+      .addClass("doctor_active");
+  });
+});
