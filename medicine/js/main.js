@@ -68,6 +68,7 @@ $(document).mouseup(function (e) {
 $('.team_wrap_card_item_btn').click(function(){
   $('.content_wrpper').addClass('content_wrpper_active');
   $('.top_wrap_team').addClass('wrap_form_active');
+  $('body').css('overflow' , 'hidden'); 
 })
 
 
@@ -89,3 +90,4 @@ $(function() {
       .addClass("doctor_active");
   });
 });
+
