@@ -31,3 +31,17 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+let wrap = document.querySelector('.dark-wraper');
+let th = document.querySelector('.thanks')
+let actBtn = document.querySelector('#btn');
+let wrapOff = document.querySelector('.dark-wraper');
+actBtn.onclick = function(){
+  th.classList.add('wrapper_active')
+  wrap.classList.add('wrapper_active')
+}
+wrapOff.onclick = function(){
+  setTimeout(
+    this.classList.remove('wrapper_active'),
+    th.classList.remove('wrapper_active'),
+  )
+}
