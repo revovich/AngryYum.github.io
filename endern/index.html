@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,325 +9,395 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
-<body>
-  <header class="container">
-      <a href="#" class="logo">
-        <img src="img/logo.svg" alt="Logo">
-      </a>
-      <div class="wrap_burger"><div class="line_wrapper">
-        <span class="burger_menu"></span>
-      </div></span></div>
-      <div class="header_sentence">
-        <a href="#">Plaisir d’offrir</a>
-        <a href="#">Reservation</a>
-      </div>
-    </header>
-    
-  <main class="full-screen">
-      <section class="home">
-          Тут будет слайдер!
-            </div>
-      </section>
-      <section class="philosophy">
-        <div class="section_title">
-          <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>La Philosophie</span>
-          <h2 class="wow fadeInUp" data-wow-delay='1s'>La Philosophie Edern</h2>
+<header>
+  <a href="#" class="logo target">
+    <svg width="129" height="21" viewBox="0 0 129 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="logo-color"
+        d="M0 0H13.5389V2.05389H0V0ZM0 9.51497H11.6108V11.5689H0V9.51497ZM0 18.9461H13.5389V21H0V18.9461ZM37.3473 0.838323C38.6048 1.38323 39.6946 2.13772 40.6587 3.05988C41.6228 3.98204 42.3772 5.07186 42.9222 6.37126C43.509 7.62874 43.7605 9.01198 43.7605 10.479C43.7605 11.8623 43.509 13.2036 42.9641 14.4611C42.4192 15.7186 41.6647 16.8084 40.7425 17.7725C39.8204 18.7365 38.6886 19.491 37.4311 20.0778C36.1737 20.6647 34.8323 20.9581 33.3653 21H26.6168V18.9461H33.6168C34.6647 18.9461 35.7126 18.6946 36.6766 18.2335C37.6407 17.7725 38.521 17.1856 39.2754 16.4311C40.0299 15.6766 40.6168 14.7964 41.0778 13.7904C41.5389 12.7844 41.7485 11.6946 41.7485 10.521C41.7485 9.43114 41.5389 8.38323 41.1198 7.37725C40.7006 6.37126 40.1138 5.49102 39.4012 4.69461C38.6886 3.8982 37.8084 3.26946 36.8443 2.80838C35.8383 2.30539 34.7904 2.05389 33.6587 2.05389H26.6168V0H33.4072C34.7485 0 36.0898 0.293413 37.3473 0.838323ZM69.3713 0H55.8323V2.05389H69.3713V0ZM67.4431 9.51497H55.8323V11.5689H67.4431V9.51497ZM69.3713 18.9461H55.8323V21H69.3713V18.9461ZM98.9222 5.7006C98.9222 6.37126 98.8383 7 98.7126 7.54491C98.5449 8.08982 98.3773 8.5509 98.1258 8.92814C97.8743 9.34731 97.6228 9.68263 97.2874 9.97605C96.9521 10.2695 96.6587 10.521 96.3234 10.6886C95.5689 11.1497 94.7306 11.4431 93.7665 11.5689L98.8383 21H96.491L91.4192 11.5689H82.4072V9.51497H93.3473C93.6407 9.51497 93.9761 9.43114 94.3952 9.30539C94.8144 9.17964 95.1916 8.92814 95.527 8.63473C95.9042 8.34132 96.1976 7.96407 96.4491 7.46108C96.7006 6.95808 96.8264 6.41317 96.8264 5.74252C96.8264 5.07186 96.7006 4.48503 96.491 4.02395C96.2814 3.56287 95.988 3.18563 95.6527 2.89222C95.3174 2.5988 94.9401 2.38922 94.521 2.26347C94.1018 2.13772 93.7246 2.05389 93.3054 2.05389H82.3653V0H93.6826C94.6467 0.0419162 95.527 0.251497 96.2395 0.670659C96.5749 0.838323 96.8683 1.0479 97.2036 1.34132C97.5389 1.63473 97.7904 1.97006 98.0419 2.34731C98.2934 2.76647 98.4611 3.22755 98.6288 3.77246C98.8383 4.31737 98.9222 4.98802 98.9222 5.7006ZM111.371 0V3.1018L113.425 5.11377L128.725 21V0H126.671V15.8862L111.371 0Z" />
+    </svg>
+
+  </a>
+  <div class="wrap_burger">
+    <div class="line_wrapper">
+      <span class="burger_menu target"></span>
+    </div>
+  </div>
+  <div class="header_sentence">
+    <a href="#" class="target">Plaisir d’offrir</a>
+    <a href="#" class="target">Reservation</a>
+  </div>
+</header>
+<main>
+  <section class="home  thumbnails">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          style="background: url('img/slider.png') no-repeat center center; background-size: cover;">
+          <span class="slider_title">Une cuisine d'émotion!</span>
+          <span class="slider_content">
+            Une cuisine d'émotion, plaisant aux clients avant
+            de plaire aux cuisiniers. Une table bousculant les codes de la gastronomie.
+          </span>
         </div>
-        <div class="card_info_wrap">
-            <div class="card_info">
-                <span class="card_info_namber  wow fadeInUpBig" data-wow-delay='0.5s'>001</span>
-                <div class="card_info_wrapper_img">
-                    <img src="img/card.png"  class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                </div>
-                <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                  <p>A deux pas de l’avenue des Champs-Elysées, le chef Jean-Edern Hurstel ouvre EDERN. 
-                    Une table bousculant les codes de la gastronomie. Où l’excellence rime avec l’impertinence et 
-                    l’esprit festif. Une cuisine d’émotion, respectueuse de la saisonnalité, plaisant aux clients 
-                    avant de plaire aux cuisiniers.</p>
-                </div>
-              </div>
+        <div class="swiper-slide"
+          style="background: url('img/slider.png') no-repeat center center; background-size: cover;">
+          <span class="slider_title">Une cuisine d'émotion!</span>
+          <span class="slider_content">
+            Une cuisine d'émotion, plaisant aux clients avant
+            de plaire aux cuisiniers. Une table bousculant les codes de la gastronomie.
+          </span>
         </div>
-              <div class="card_info_wrap">
-                  <div class="card_info">
-                      <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>002</span>
-                      <div class="card_info_wrapper_img">
-                      <img src="img/card2.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                      </div>
-                      <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                        <p>A la table d’EDERN, les tomates cerises choisies sont à l’ancienne, 
-                          le pain de campagne croustillant signé Frédéric Lalos, des gages d’authenticité. 
-                          Les poissons de ligne sélectionnés par Maison Nordique viennent accompagner les 
-                          recettes classiques. Quant aux viandes, toutes françaises, place au gourmand à 
-                          l’instar du quasi de veau de lait et de l’épaule d’agneau de lait. Dans le même 
-                          esprit festif, la carte des champagnes vise l’excellence et le bar d’EDERN sort 
-                          les shakers et réalise les grands classiques du cocktail.</p>
-                      </div>
-                    </div>
-              </div>
-      </section>
-      <section class="home ">
-        Тут будет второй слайдер!
-          </div>
-    </section>
-    <section class="kitchen">
-      <div class="section_title">
-        <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>Chef</span>
-        <h2 class="wow fadeInUp" data-wow-delay='1s'>De l’Amourbren Cuisine</h2>
+        <div class="swiper-slide"
+          style="background: url('img/slider.png') no-repeat center center; background-size: cover;">
+          <span class="slider_title">Une cuisine d'émotion!</span>
+          <span class="slider_content">
+            Une cuisine d'émotion, plaisant aux clients avant
+            de plaire aux cuisiniers. Une table bousculant les codes de la gastronomie.
+          </span>
+        </div>
+        <div class="swiper-slide"
+          style="background: url('img/slider.png') no-repeat center center; background-size: cover;">
+          <span class="slider_title">Une cuisine d'émotion!</span>
+          <span class="slider_content">
+            Une cuisine d'émotion, plaisant aux clients avant
+            de plaire aux cuisiniers. Une table bousculant les codes de la gastronomie.
+          </span>
+        </div>
       </div>
-      <img class="kitchen_chef" src="img/chef.png" alt="chef">
-      <div class="kitchen_chef_text wow fadeIn" data-wow-delay='0.5s'>
-        Jean-Edern Hurstel s’est dirigé vers la cuisine par passion. Un péché de gourmandise 
-        pour ce chef issu d’une famille de 7 enfants, qui le conduira directement chez les étoilés. 
-        Apprenti à Genève du chef Claude Legras, « son deuxième papa » au restaurant du Parc des Eaux-Vives, 
-        il gravit les marches une à une. <br><br>
-        Chez Lucas Carton à Paris, il apprend aux côtés d’Alain Senderens 
-        l’excellence et le mariage des saveurs. D’Alain Passard à l’Arpège (3 étoiles), il gagne le respect 
-        du produit, l’art de la cuisson et des bons accords.
+      <!-- If we need pagination -->
+      <div class="swiper-pagination">
       </div>
+    </div>
+    </div>
+
   </section>
-  <section class="victory" data-midnight="blue">
+  <section class="philosophy" id="la">
+    <div class="section_title">
+      <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>La Philosophie</span>
+      <h2 class="wow fadeInUp" data-wow-delay='1s'>La Philosophie Edern</h2>
+    </div>
+    <div class="card_info_wrap">
+      <div class="card_info">
+        <span class="card_info_namber  wow fadeInUpBig" data-wow-delay='0.5s'>001</span>
+        <div class="card_info_wrapper_img">
+          <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
+        </div>
+        <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
+          <p>A deux pas de l’avenue des Champs-Elysées, le chef Jean-Edern Hurstel ouvre EDERN.
+            Une table bousculant les codes de la gastronomie. Où l’excellence rime avec l’impertinence et
+            l’esprit festif. Une cuisine d’émotion, respectueuse de la saisonnalité, plaisant aux clients
+            avant de plaire aux cuisiniers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card_info_wrap">
+      <div class="card_info">
+        <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>002</span>
+        <div class="card_info_wrapper_img">
+          <img src="img/card2.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
+        </div>
+        <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
+          <p>A la table d’EDERN, les tomates cerises choisies sont à l’ancienne,
+            le pain de campagne croustillant signé Frédéric Lalos, des gages d’authenticité.
+            Les poissons de ligne sélectionnés par Maison Nordique viennent accompagner les
+            recettes classiques. Quant aux viandes, toutes françaises, place au gourmand à
+            l’instar du quasi de veau de lait et de l’épaule d’agneau de lait. Dans le même
+            esprit festif, la carte des champagnes vise l’excellence et le bar d’EDERN sort
+            les shakers et réalise les grands classiques du cocktail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--
+    <section class="home ">
+    Тут будет второй слайдер!
+    </div>
+  </section>
+-->
+  <section class="kitchen" id="chef">
+    <div class="section_title">
+      <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>Chef</span>
+      <h2 class="wow fadeInUp" data-wow-delay='1s'>De l’Amourbren Cuisine</h2>
+    </div>
+    <img class="kitchen_chef thumbnails" src="img/chef.png" alt="chef">
+    <div class="kitchen_chef_text wow fadeIn" data-wow-delay='0.5s'>
+      Jean-Edern Hurstel s’est dirigé vers la cuisine par passion. Un péché de gourmandise
+      pour ce chef issu d’une famille de 7 enfants, qui le conduira directement chez les étoilés.
+      Apprenti à Genève du chef Claude Legras, « son deuxième papa » au restaurant du Parc des Eaux-Vives,
+      il gravit les marches une à une. <br><br>
+      Chez Lucas Carton à Paris, il apprend aux côtés d’Alain Senderens
+      l’excellence et le mariage des saveurs. D’Alain Passard à l’Arpège (3 étoiles), il gagne le respect
+      du produit, l’art de la cuisson et des bons accords.
+    </div>
+  </section>
+  <section class="victory">
     <div class="victory_text">
       <span class="victory_text_title">Victoires dans des concours importants</span>
       <ul class="victory_text_list">
-          <li>
-              <div class="victory_text_list_data_wrap">
-                  <span class="victory_text_list_data">2019</span>
-                  <span class="victory_text_list_prew">Bocuse d'Or</span>
-              </div>
-              <span class="victory_text_list_namber">Première place</span>
-            </li>
-            <li>
-                <div class="victory_text_list_data_wrap">
-                    <span class="victory_text_list_data">2018</span>
-                    <span class="victory_text_list_prew">La Coupe du Monde de la Patisserie</span>
-                </div>
-                <span class="victory_text_list_namber">Deuxième place</span>
-              </li>
-              <li>
-                  <div class="victory_text_list_data_wrap">
-                      <span class="victory_text_list_data">2018</span>
-                      <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
-                  </div>
-                  <span class="victory_text_list_namber">Première place</span>
-                </li>
-                <li>
-                    <div class="victory_text_list_data_wrap">
-                        <span class="victory_text_list_data">2018</span>
-                        <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
-                    </div>
-                    <span class="victory_text_list_namber">Première place</span>
-                  </li>
-                  <li>
-                      <div class="victory_text_list_data_wrap">
-                          <span class="victory_text_list_data">2018</span>
-                          <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
-                      </div>
-                      <span class="victory_text_list_namber">Première place</span>
-                    </li>
+        <li>
+          <div class="victory_text_list_data_wrap">
+            <span class="victory_text_list_data">2019</span>
+            <span class="victory_text_list_prew">Bocuse d'Or</span>
+          </div>
+          <span class="victory_text_list_namber">Première place</span>
+        </li>
+        <li>
+          <div class="victory_text_list_data_wrap">
+            <span class="victory_text_list_data">2018</span>
+            <span class="victory_text_list_prew">La Coupe du Monde de la Patisserie</span>
+          </div>
+          <span class="victory_text_list_namber">Deuxième place</span>
+        </li>
+        <li>
+          <div class="victory_text_list_data_wrap">
+            <span class="victory_text_list_data">2018</span>
+            <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
+          </div>
+          <span class="victory_text_list_namber">Première place</span>
+        </li>
+        <li>
+          <div class="victory_text_list_data_wrap">
+            <span class="victory_text_list_data">2018</span>
+            <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
+          </div>
+          <span class="victory_text_list_namber">Première place</span>
+        </li>
+        <li>
+          <div class="victory_text_list_data_wrap">
+            <span class="victory_text_list_data">2018</span>
+            <span class="victory_text_list_prew">Global Chef Challenge «GCC»</span>
+          </div>
+          <span class="victory_text_list_namber">Première place</span>
+        </li>
       </ul>
     </div>
     <div class="victory_footer" style="background: url('img/BG.png') no-repeat right;">
-<img src="img/Food.png" alt="food" class="victory_footer_food wow fadeInRight" data-wow-delay='0.5s'>
+      <img src="img/Food.png" alt="food" class="victory_footer_food wow fadeInRight" data-wow-delay='0.5s'>
     </div>
   </section>
-  <section class="night" data-midnight="blue">
-      <div class="section_title">
-          <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>La fete</span>
-          <h2 class="wow fadeInUp" data-wow-delay='1s'>Les Nuits d’Edern</h2>
+  <section class="night" id="fate">
+    <div class="section_title">
+      <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>La fete</span>
+      <h2 class="wow fadeInUp" data-wow-delay='1s'>Les Nuits d’Edern</h2>
+    </div>
+    <div class="card_info_wrap">
+      <div class="card_info">
+        <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>005</span>
+        <div class="card_info_wrapper_img_big">
+          <img src="img/card3.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
         </div>
-        <div class="card_info_wrap">
-            <div class="card_info">
-                <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>005</span>
-                <div class="card_info_wrapper_img_big">
-                <img src="img/card3.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                </div>
-                <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                  <p>Passé l’escalier sculptural et béton, Edern prolonge ses dîners au bar et lounge du sous-sol.
-                     Ambiance club. Et déconnexion programmée. De l’ambré des flacons aux photographies noir et blanc,
-                      des banquettes relaxantes à l’autre comptoir de bar, l’esprit est à la détente. Lumières design 
-                      et tamisées, toujours flatteuses. Pour les amateurs, un Cigare Lounge marron glacé fait la pause 
-                      parfaite d’après-dîner, et tous profitent des sets de Dj.</p>
-                    <button class="card_info_res">Reservation</button>
-                </div>
-              </div>
+        <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
+          <p>Passé l’escalier sculptural et béton, Edern prolonge ses dîners au bar et lounge du sous-sol.
+            Ambiance club. Et déconnexion programmée. De l’ambré des flacons aux photographies noir et blanc,
+            des banquettes relaxantes à l’autre comptoir de bar, l’esprit est à la détente. Lumières design
+            et tamisées, toujours flatteuses. Pour les amateurs, un Cigare Lounge marron glacé fait la pause
+            parfaite d’après-dîner, et tous profitent des sets de Dj.</p>
+          <button class="card_info_res">Reservation</button>
         </div>
+      </div>
+    </div>
   </section>
-  <section class="now" data-midnight="white">
-      <div class="section_title">
-          <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>entreprise</span>
-          <h2 class="wow fadeInUp" data-wow-delay='1s'>Edern</h2>
+  <section class="now">
+    <div class="section_title">
+      <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>entreprise</span>
+      <h2 class="wow fadeInUp" data-wow-delay='1s'>Edern</h2>
+    </div>
+    <div class="card_info_wrap">
+      <div class="card_info">
+        <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>006</span>
+        <div class="card_info_wrapper_img_big_h">
+          <img src="img/card4.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
         </div>
-        <div class="card_info_wrap">
-            <div class="card_info">
-                <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>006</span>
-                <div class="card_info_wrapper_img_big_h">
-                <img src="img/card4.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-              </div>
-                <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                  <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des 
-                    foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois 
-                    de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface. 
-                    <br><br>
-                    Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
-                     plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
-                </div>
-              </div>
+        <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
+          <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des
+            foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois
+            de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface.
+            <br><br>
+            Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
+            plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
         </div>
-        <div class="now_wrapper">
-            <div class="card_info_wrap">
-                <div class="card_info">
-                    <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>007</span>
-                    <div class="card_info_wrapper_img">
-                    <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                    </div>
-                    <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                      <span class="card_info_title">Fête</span>
-                      <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des 
-                          foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois 
-                          de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface. 
-                          <br><br>
-                          Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
-                           plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
-                           <button class="card_info_res">Reservation</button>
-                    </div>
-                  </div>
-            </div>
-            <div class="card_info_wrap">
-                <div class="card_info">
-                    <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>008</span>
-                    <div class="card_info_wrapper_img">
-                    <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                    </div>
-                    <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                      <span class="card_info_title">Fête</span>
-                      <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des 
-                          foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois 
-                          de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface. 
-                          <br><br>
-                          Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
-                           plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
-                           <button class="card_info_res">Reservation</button>
-                    </div>
-                  </div>
-            </div>
-            <div class="card_info_wrap">
-                <div class="card_info">
-                    <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>009</span>
-                    <div class="card_info_wrapper_img">
-                    <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
-                    </div>
-                    <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
-                      <span class="card_info_title">Fête</span>
-                      <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des 
-                          foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois 
-                          de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface. 
-                          <br><br>
-                          Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
-                           plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
-                           <button class="card_info_res">Reservation</button>
-                    </div>
-                  </div>
-            </div>
-        </div>
-  </section>
-  <section class="manu">
-      <div class="section_title">
-          <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>Menu</span>
-          <h2 class="wow fadeInUp" data-wow-delay='1s'>Une nourriture qui va vous surprendre</h2>
-        </div>
-        <div class="menu_wrap">
-          <div class="menu_wrap_header wow fadeInUp" data-wow-delay='0.5s'>
-              <div class="menu_wrap_header_slaky">
-                <span class="menu_wrap_name">Les catégories:</span>
-              <ul>
-                  <li><a href="#">Carte</a></li>
-                  <li><a href="#">Cocktails</a></li>
-                  <li><a href="#">Carte</a></li>
-                  <li><a href="#">Cocktails</a></li>
-               
-              </ul>
-              </div>
+      </div>
+    </div>
+    <div class="now_wrapper">
+      <div class="card_info_wrap">
+        <div class="card_info">
+          <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>007</span>
+          <div class="card_info_wrapper_img">
+            <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
           </div>
-          <div class="menu_card_wrapper wow fadeInUp" data-wow-delay='1s' >
-            <div class="menu_card">
-              <span class="menu_card_title">To Share</span>
-              <ul>
-                <li>
-                  <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                  <span class="menu_card_price">10 €</span></li>
-                  <li>
-                    <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                    <span class="menu_card_price">10 €</span></li>
-                    <li>
-                      <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                      <span class="menu_card_price">10 €</span></li>
-                      <li>
-                        <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                        <span class="menu_card_price">10 €</span></li>
-                        <li>
-                          <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                          <span class="menu_card_price">10 €</span></li>
-              </ul>
-            </div>
-            <div class="menu_card">
-              <span class="menu_card_title">To Share</span>
-              <ul>
-                <li>
-                  <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                  <span class="menu_card_price">10 €</span></li>
-                  <li>
-                    <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                    <span class="menu_card_price">10 €</span></li>
-                    <li>
-                      <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                      <span class="menu_card_price">10 €</span></li>
-              </ul>
-            </div>
-            <div class="menu_card">
-              <span class="menu_card_title">To Share</span>
-              <ul>
-                        <li>
-                          <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
-                          <span class="menu_card_price">10 €</span></li>
-              </ul>
-            </div>
+          <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s'
+            data-wow-offset='0'>
+            <span class="card_info_title">Fête</span>
+            <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des
+              foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois
+              de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface.
+              <br><br>
+              Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
+              plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
+            <button class="card_info_res">Reservation</button>
           </div>
         </div>
+      </div>
+      <div class="card_info_wrap">
+        <div class="card_info">
+          <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>008</span>
+          <div class="card_info_wrapper_img">
+            <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
+          </div>
+          <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s'
+            data-wow-offset='0'>
+            <span class="card_info_title">Fête</span>
+            <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des
+              foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois
+              de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface.
+              <br><br>
+              Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
+              plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
+            <button class="card_info_res">Reservation</button>
+          </div>
+        </div>
+      </div>
+      <div class="card_info_wrap">
+        <div class="card_info">
+          <span class="card_info_namber wow fadeInUpBig" data-wow-delay='0.5s'>009</span>
+          <div class="card_info_wrapper_img">
+            <img src="img/card.png" class="wow fadeInRight" data-wow-delay='1s' alt="Кухня">
+          </div>
+          <div class="card_info_text wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s'
+            data-wow-offset='0'>
+            <span class="card_info_title">Fête</span>
+            <p>Au 6, rue Arsène Houssaye (Paris 8ème), il y eut d’abord Citrus Etoile. A l’abri des
+              foules des Champs-Elysées, un immeuble d’angle cachant de strésors. Sublimé après 8 mois
+              de chantier, le nouvel espace se déploie maintenant sur 2 niveaux et 360 m² de surface.
+              <br><br>
+              Au premier, une salle principale faisant apparaître la pierre naturelle, et sous les anciens
+              plafonds, une verrière. Au sous-sol, un lounge et lieu de vie de jour comme de nuit.</p>
+            <button class="card_info_res">Reservation</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="news">
+  <section class="manu" id="menu">
+    <div class="section_title">
+      <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>Menu</span>
+      <h2 class="wow fadeInUp" data-wow-delay='1s'>Une nourriture qui va vous surprendre</h2>
+    </div>
+    <div class="menu_wrap">
+      <div class="menu_wrap_header wow fadeInUp" data-wow-delay='0.5s'>
+        <div class="menu_wrap_header_slaky">
+          <span class="menu_wrap_name">Les catégories:</span>
+          <ul>
+            <li><a href="#">Carte</a></li>
+            <li><a href="#">Cocktails</a></li>
+            <li><a href="#">Carte</a></li>
+            <li><a href="#">Cocktails</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="menu_card_wrapper wow fadeInUp" data-wow-delay='1s'>
+        <div class="menu_card">
+          <span class="menu_card_title">To Share</span>
+          <ul>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+          </ul>
+        </div>
+        <div class="menu_card">
+          <span class="menu_card_title">To Share</span>
+          <ul>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+          </ul>
+        </div>
+        <div class="menu_card">
+          <span class="menu_card_title">To Share</span>
+          <ul>
+            <li>
+              <span class="menu_card_item">Landes poultry wings / caramelized / soy sauce / ginger</span>
+              <span class="menu_card_price">10 €</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="pre">
     <div class="section_title">
       <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>La presse</span>
       <h2 class="wow fadeInUp" data-wow-delay='1s'> Un endroit <br> que tout le monde connait</h2>
     </div>
     <article class="news_card">
-      <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>24.04.2019</span>
-      <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0' src="img/card7.png" alt="news">
+      <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s'
+        data-wow-offset='0'>24.04.2019</span>
+      <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'
+        src="img/card7.png" alt="news">
       <div class="news_content wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>
         <p>Un exemple d'affichage du nom de la publication sur le site </p>
       </div>
     </article>
     <article class="news_card">
-        <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>24.04.2019</span>
-        <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0' src="img/card7.png" alt="news">
-        <div class="news_content wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>
-          <p>Un exemple d'affichage du nom de la publication sur le site </p>
-        </div>
-      </article>
-      <article class="news_card">
-          <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>24.04.2019</span>
-          <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0' src="img/card7.png" alt="news">
-          <div class="news_content wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>
-            <p>Un exemple d'affichage du nom de la publication sur le site </p>
-          </div>
-        </article>
+      <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s'
+        data-wow-offset='0'>24.04.2019</span>
+      <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'
+        src="img/card7.png" alt="news">
+      <div class="news_content wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>
+        <p>Un exemple d'affichage du nom de la publication sur le site </p>
+      </div>
+    </article>
+    <article class="news_card">
+      <span class="news_data wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s'
+        data-wow-offset='0'>24.04.2019</span>
+      <img class="news_img wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'
+        src="img/card7.png" alt="news">
+      <div class="news_content wow fadeIn" data-wow-duration='1.5s' data-wow-delay='1.5s' data-wow-offset='0'>
+        <p>Un exemple d'affichage du nom de la publication sur le site </p>
+      </div>
+    </article>
   </section>
-  <section class="contact">
+  <section class="contact" id="conact">
     <div class="section_title">
       <span class="section_prew wow fadeInDown" data-wow-delay='0.5s'>Contact</span>
       <h2 class="wow fadeInUp" data-wow-delay='1s'>Au coeur de Paris</h2>
     </div>
     <div class="map ">
-      <div class="wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0' style="width: 617px;position: relative; "><iframe width="617" height="759" src="https://maps.google.com/maps?width=617&amp;height=759&amp;hl=en&amp;q=6%20rue%20Ars%C3%A8ne%20Houssaye%2C%208%C3%A8me+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/pt/">googlemapsgen (pt)</a> & <a href="http://eurodisneyaanbiedingen.nl/">Eurodisneyaanbiedingen (blog)</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+      <div class="wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'
+        style="width: 617px;position: relative; "><iframe width="617" height="759"
+          src="https://maps.google.com/maps?width=617&amp;height=759&amp;hl=en&amp;q=6%20rue%20Ars%C3%A8ne%20Houssaye%2C%208%C3%A8me+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div
+          style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+          <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a
+              href="http://www.googlemapsgenerator.com/pt/">googlemapsgen (pt)</a> & <a
+              href="http://eurodisneyaanbiedingen.nl/">Eurodisneyaanbiedingen (blog)</a></small></div>
+        <style>
+          #gmap_canvas img {
+            max-width: none !important;
+            background: none !important
+          }
+        </style>
+      </div><br />
     </div>
     <div class="contact_wrapper wow fadeInRight" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
       <div class="contact_wrapper_adress">
@@ -339,11 +410,12 @@
       </div>
       <div class="contact_wrapper_adress">
         <span class="contact_wrapper_adress_title">E-mail</span>
-        <a href="mailto:reservation@edern-restaurant.com" class="contact_wrapper_adress_info">6 rue Arsène Houssaye, 8ème</a>
+        <a href="mailto:reservation@edern-restaurant.com" class="contact_wrapper_adress_info">6 rue Arsène Houssaye,
+          8ème</a>
       </div>
     </div>
   </section>
-  <section class="end wow fadeInRightBig" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
+  <section class="end wow fadeInRightBig thumbnails" data-wow-duration='1.5s' data-wow-delay='0.5s' data-wow-offset='0'>
     <img src="img/footer.png" alt="Logo" class="end_logo">
     <div class="end_contact">
       <span class="end_contact_title">Les contacts:</span>
@@ -359,21 +431,32 @@
       <a href="#">Politique de confidentialité</a>
     </div>
   </section>
-</main>  
+</main>
 <footer class="container">
   <div class="btn_footer">
-    <button>Fr</button>
-    <button>En</button>
+    <button class="target">Fr</button>
+    <button class="target">En</button>
   </div>
-  <a href="#" target="_blank" class="inst">Instargam</a>
+  <div class="inst target"><a href="#" target="_blank">Instargam</a></div>
 </footer>
 <div class="nav_wrapper">
-  
+  <nav>
+    <ul>
+      <li><a href="#la">La philosophie</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#fate">La fete</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#pre"> La presse</a></li>
+      <li><a href="#conact">Contact</a></li>
+    </ul>
+  </nav>
 </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src='js/wow.js'></script>
-  <script src="js/color-scroll.js"></script>
-  <script src="js/main.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/backgroundcheck.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src='js/wow.js'></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>
