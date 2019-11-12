@@ -1,7 +1,9 @@
+  
   var wow = new WOW( {
     boxClass:     'wow',
     animateClass: 'animated',
-    offset:       350
+    offset:       350,
+    mobile: false
   }
     );
   wow.init();
@@ -16,7 +18,17 @@
     document.querySelector('.burger_menu').classList.toggle('borger-fff');
     document.querySelector('main').classList.toggle('menu-scroll')
   };
-
+width = $(window).width();
+if (width >= 671) {
+  $.jInvertScroll(['.scroll'], 
+  i = 800 + 'px',       // an array containing the selector(s) for the elements you want to animate
+      {
+      height: i,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+      onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+          console.log(percent);
+      }
+  });
+}
   var mySwiper = new Swiper ('.swiper-container', {
     allowTouchMove: false,
     centeredSlides: true,
@@ -60,20 +72,11 @@
       prevEl: '.swiper-button-prev',
     },
   });
-  setTimeout(function(){
-    BackgroundCheck.init({
-      targets: '.target',
-      images: '.thumbnails , img'
-    });
-        },1000);
-        $.jInvertScroll(['.scroll'], 
-        i = 800 + 'px',       // an array containing the selector(s) for the elements you want to animate
-            {
-            height: i,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-                console.log(percent);
-            }
-        });
+
+  BackgroundCheck.init({
+    targets: '.target',
+    images: '.thumbnails , img'
+  });
         document.addEventListener("DOMContentLoaded", function () {
           var X = Y = 0;
       
@@ -224,8 +227,19 @@ for(i = 0; i<reservation.length; i++){
   }
 }
 let wrapOf = document.querySelector('.full-wrapper-screen');
-
+/*
 wrapOf.onclick = function(){
   document.querySelector('.reservation').classList.remove('reservation-act')
 }
+*/
+let menuFilter = document.querySelector('.menu_wrap_name');
+menuFilter.onclick = function(){
+  document.querySelector('.menu_wrap_header ul').classList.toggle('menu_wrap_header_active')
+}
 
+
+$('.menu_wrap_header_slaky').on({
+  'touchmove': function(e) { 
+      $(this).css('right' + 30 + 'px');
+  }
+});
