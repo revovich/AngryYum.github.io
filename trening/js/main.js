@@ -1,11 +1,28 @@
 var mySwiper = new Swiper('.swiper-container', {
   speed: 400,
-  slidesPerView: 3,
   loop: true,
   navigation: {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
   },
+  breakpoints: {
+    1040: {
+      slidesPerView: 3,
+      spaceBetween: 12
+    },
+    870: {
+      slidesPerView: 2,
+      spaceBetween: 12
+    },
+    620: {
+      slidesPerView: 3,
+      spaceBetween: 12
+    },
+    350: {
+      slidesPerView: 2,
+      spaceBetween: 12
+    },
+  }
 });
 
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
@@ -26,3 +43,25 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+let title = document.querySelector('.sections-title-bold');
+if(window.matchMedia('(max-width: 400px)').matches){
+  title.innerHTML = 'Обучался у лучших в мире';
+};
+let visBtn = document.querySelector('.list-vis');
+let list = document.querySelector('.hide-list');
+visBtn.onclick = function(){
+  list.classList.toggle('vis-list')
+}
+let leadBtn = document.querySelector('.lead-vis');
+let lead = document.querySelector('.lead-left .stages-list');
+leadBtn.onclick = function(){
+  lead.classList.toggle('lead-list')
+}
+
+let burger = document.querySelector('.burger-wrap');
+let wrap = document.querySelector('.wrapper-menu');
+let nav = document.querySelector('nav');
+burger.onclick = function(){
+  wrap.classList.toggle('wrap-vis');
+  nav.classList.toggle('wrap-vis');
+}
