@@ -8,6 +8,7 @@ window.onload = function() {
     spaceBetween: 100,
     loop: true,
     pagination: {
+      type: 	'bullets',
       el: '.swiper-pagination',
       clickable: true,
         renderBullet: function (index, className , current, total) {
@@ -23,8 +24,8 @@ window.onload = function() {
   let mySwiperTwo = new Swiper('.swiper-container-two', {
     speed: 400,
     spaceBetween: 0,
-    slidesPerView: 4,
     loop: true,
+    autoplay: false,
     pagination: {
       el: '.swiper-namber-pagination',
       type: 'fraction',
@@ -33,12 +34,28 @@ window.onload = function() {
       nextEl: '.swiper-oreng-next',
       prevEl: '.swiper-oreng-prev',
     },
+    breakpoints: {
+    
+      1277: {
+        slidesPerView: 4,
+      },
+      750: {
+        slidesPerView: 3,
+      },
+      680: {
+        slidesPerView: 2,
+      },
+      680: {
+        slidesPerView: 1,
+      },
+    }
   });
   let mySwiperThree = new Swiper('.swiper-container-three', {
     speed: 400,
-    spaceBetween: 90,
-    slidesPerView: 2,
     loop: true,
+    autoplay: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
     pagination: {
       el: '.swiper-namber-pagination-two',
       type: 'fraction',
@@ -47,6 +64,16 @@ window.onload = function() {
       nextEl: '.swiper-oreng-two-next',
       prevEl: '.swiper-oreng-two-prev',
     },
+    breakpoints:{
+      685: {
+        spaceBetween: 90,
+        slidesPerView: 2,
+      },
+      540: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+    }
   });
 };
 
@@ -73,7 +100,14 @@ rangeSlider.addEventListener("input", showSliderValue, false);
 function showSliderValue() {
   rangeBullet.innerHTML = rangeSlider.value;
   var bulletPosition = (rangeSlider.value /rangeSlider.max);
-  rangeBullet.style.left = (bulletPosition * 293) + "px";
+  if (window.matchMedia("(max-width: 430px)").matches) {
+    rangeBullet.style.left = (bulletPosition * 250) + "px";
+  } else {
+    rangeBullet.style.left = (bulletPosition * 293) + "px";
+  }
+
+
+
 }
 document.getElementById("rs-range-line").oninput = function() {
   this.style.background = 'linear-gradient(to right, #f6dd30 0%, '+this.value /32 +'%, #E5E5E5 ' 
@@ -88,7 +122,11 @@ rangeSliderTwo.addEventListener("input", showSliderValueTwo, false);
 function showSliderValueTwo() {
   rangeBulletTwo.innerHTML = rangeSliderTwo.value;
   var bulletPosition = (rangeSliderTwo.value /rangeSliderTwo.max);
-  rangeBulletTwo.style.left = (bulletPosition * 293) + "px";
+  if (window.matchMedia("(max-width: 430px)").matches) {
+    rangeBulletTwo.style.left = (bulletPosition * 250) + "px";
+  } else {
+    rangeBulletTwo.style.left = (bulletPosition * 293) + "px";
+  }
 }
 document.getElementById("rs-range-line-two").oninput = function() {
   this.style.background = 'linear-gradient(to right, #f6dd30 0%, '+this.value /2.1 +'%, #E5E5E5 ' 
@@ -103,7 +141,11 @@ rangeSliderThree.addEventListener("input", showSliderValueThree, false);
 function showSliderValueThree() {
   rangeBulletThree.innerHTML = rangeSliderThree.value;
   var bulletPosition = (rangeSliderThree.value /rangeSliderThree.max);
-  rangeBulletThree.style.left = (bulletPosition * 293) + "px";
+  if (window.matchMedia("(max-width: 430px)").matches) {
+    rangeBulletThree.style.left = (bulletPosition * 250) + "px";
+  } else {
+    rangeBulletThree.style.left = (bulletPosition * 293) + "px";
+  }
 }
 document.getElementById("rs-range-line-three").oninput = function() {
   this.style.background = 'linear-gradient(to right, #f6dd30 0%, '+this.value *1.6 +'%, #E5E5E5 ' 
@@ -160,3 +202,9 @@ searchBtn.onclick = function(){
   searcInp.classList.toggle('db')
 }
 
+let mobMenu = document.querySelector('header .nav');
+let mobLine = document.querySelector('.line-burger');
+document.querySelector('.burger-wrap').onclick = function(){
+  mobMenu.classList.toggle('mobMenuActive');
+  mobLine.classList.toggle('line-burger-active')
+}
