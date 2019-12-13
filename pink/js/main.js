@@ -75,7 +75,15 @@ inp.addEventListener('keypress', e => {
   if(!/\d/.test(e.key))
     e.preventDefault();
 });
-
+var swiper = new Swiper('.swiper-about', {
+  direction: 'vertical',
+  slidesPerView: 'auto',
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  mousewheel: true,
+});
 
 $('select').each(function(){
   var $this = $(this), numberOfOptions = $(this).children('option').length;
@@ -121,4 +129,39 @@ $('select').each(function(){
       $list.hide();
   });
 
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs-two', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: 'vertical',
+  slideActiveClass: 'slider-about-active',
+  mousewheel: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+});
+var galleryTop = new Swiper('.gallery-top-two', {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  breakpoints: {
+    1250: {
+      direction: 'vertical',
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-end-next',
+    prevEl: '.swiper-button-end-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
 });
