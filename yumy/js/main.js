@@ -101,7 +101,7 @@ var mySwiper = new Swiper('.cards-slider-wrap', {
         let infoBtn = $(this).attr("data-btn");
         let info = $(this).attr("data-info");
         $('.new-title').html(title);
-        $('.new-content').html(content);
+        $('.new-text').html(content);
         $('.new-submit').val(infoBtn);
         $('.input-info').val(info);
 
@@ -263,7 +263,17 @@ $('.vacancies-popap-close').click(function(){
 })
 
 
-
+$(document).mouseup(function (e){ 
+  var div = $( ".popap-content"); 
+  if (!div.is(e.target) 
+      && div.has(e.target).length === 0) { 
+    div.fadeOut(700); 
+    $('body').css({'overflow': 'auto'}) 
+    $(".main-wrap").fadeOut(800);
+    $(".vacancies-popap-content").fadeOut(700);
+    $(".popap-content").fadeOut(700);
+  }
+});
 
 
 
