@@ -12,12 +12,6 @@ window.onload = function() {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      breakpoints: {
-        820: {
-            width: 550,
-            height: 310,
-        },
-      }
 });
 
 var mySwiper = new Swiper('.cards-slider', {
@@ -25,16 +19,11 @@ var mySwiper = new Swiper('.cards-slider', {
   spaceBetween: 0,
   slidesPerView: 1,
   lazy: true,
-  width: 380,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      820: {
-          width: 400,
-          height: 208,
-      },
     }
 });
 var mySwiper = new Swiper('.cards-slider-wrap', {
@@ -42,7 +31,6 @@ var mySwiper = new Swiper('.cards-slider-wrap', {
   spaceBetween: 10,
   slidesPerView: 1,
   lazy: true,
-  width: 1700,
   navigation: {
     nextEl: '.swiper-button-next-home',
     prevEl: '.swiper-button-prev-home',
@@ -50,46 +38,68 @@ var mySwiper = new Swiper('.cards-slider-wrap', {
   pagination: {
     el: '.swiper-pagination-home',
     type: 'bullets',
+    clickable: true,
   },
     breakpoints: {
-      1800: {
-        slidesPerView: 4,
-      },
       1500: {
         slidesPerView: 4,
-        width: 1400,
-      },
-      1305: {
-        slidesPerView: 3,
-        width: 1200,
-
       },
       1100: {
         slidesPerView: 3,
-        width: 1000,
 
       },
-      890: {
+      700: {
         slidesPerView: 2,
-        width: 800,
       },
-      697: {
-        slidesPerView: 2,
-        width: 600,
-      },
-      480: {
-        spaceBetween: 0,
-        slidesPerView: 1,
-        width: 450,
-      },
-      1: {
-        spaceBetween: 0,
-        slidesPerView: 1,
-        width: 310,
-      },
+
+
+
     }
 });
   
+
+/**
+function come(elem) {
+  var docViewTop = $(window).scrollTop(),
+    docViewBottom = docViewTop + $(window).height(),
+    elemTop = $(elem).offset().top,
+    elemBottom = elemTop + $(elem).height();
+
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+var slider = document.getElementById('slider')
+var limitSlider = document.querySelector('#slider-limit');
+let min = Number($('#slider-limit-value-min').attr('data-left'));
+let max = Number($('#slider-limit-value-max').attr('data-right'));
+
+noUiSlider.create(limitSlider, {
+    start: [min, max],
+    connect: true,
+    range: {
+        'min': min,
+        'max': max,
+    },
+    format: wNumb({
+      decimals: 0,
+      thousand: ' ',
+      prefix: '$'
+  }),
+});
+
+var limitFieldMin = document.querySelector('#slider-limit-value-min');
+var limitFieldMax = document.querySelector('#slider-limit-value-max');
+
+limitSlider.noUiSlider.on('update', function (values, handle) {
+    (handle ? limitFieldMax : limitFieldMin).innerHTML = values[handle];
+});
+
+
+; */
+
+
+
+
 
     $('.popap').click(function () {
         $('body').css({'overflow': 'hidden'}) 
@@ -244,9 +254,9 @@ setInterval(function(){
 
 
 $(".tab_item").not(":first").hide();
-$(".books .tab-title").hover(function() {
+$(".books .tab-title").click(function() {
     $(".books .tab-title").removeClass("red").eq($(this).index()).addClass("red");
-    $(".tab_item").hide().eq($(this).index()).fadeIn(100)
+    $(".tab_item").fadeOut(500).eq($(this).index()).delay(500).fadeIn(1000)
 }).eq(0).addClass("red");
 
 
