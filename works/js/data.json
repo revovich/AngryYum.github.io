@@ -1,8 +1,0 @@
-{
-  "type": "FeatureCollection",
-  "features": [
-      {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.73973206899513,37.60550799999995]}, "properties": {"balloonContentHeader": "<span class='myBalonCastom_header'>Сокар Энергоресурс</span>", "balloonContentBody": "<span class='myBalonCastom'>Москва</span><span class='myBalonCastom'>Пречистенская наб. 17/19</span>", "balloonContentFooter": "<a class='myBalonCastom' href='tel:+7(499) 502-8888' >+7(499) 502-8888</a>", "hintContent": "<strong>Сокар Энергоресурс</strong>"}},
-      {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [53.75672207079035,41.02551099999998]}, "properties": {"balloonContentHeader": "<span class='myBalonCastom_header'>НК Новый Поток</span>", "balloonContentBody": "<span class='myBalonCastom'>Бузулук</span><span class='myBalonCastom'>Пречистенская наб. 17/19</span>", "balloonContentFooter": "<a class='myBalonCastom' href='tel:+7(499) 502-8888' >+7(499) 502-8888</a>", "hintContent": "<strong>Сокар Энергоресурс</strong>"}},
-      {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [52.93639757143206,102.79593349999993]}, "properties": {"balloonContentHeader": "<span class='myBalonCastom_header'>Антипинский НПЗ</span>", "balloonContentBody": "<span class='myBalonCastom'>Тюмень</span><span class='myBalonCastom'>Пречистенская наб. 17/19</span>", "balloonContentFooter": "<a class='myBalonCastom' href='tel:+7(499) 502-8888' >+7(499) 502-8888</a>", "hintContent": "<strong>Сокар Энергоресурс</strong>"}}
-  ]
-}
