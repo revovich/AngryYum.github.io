@@ -83,17 +83,28 @@ var mySwiper = new Swiper('.cards-slider-product', {
 
     }
 });
+var mySwiper = new Swiper('.cards-slider-product-footer', {
+  speed: 400,
+  spaceBetween: 10,
+  slidesPerView: 1,
+  lazy: true,
+    navigation: {
+      nextEl: '.swiper-button-next-home',
+      prevEl: '.swiper-button-prev-home',
+    },
+    breakpoints: {
+      1390: {
+        slidesPerView: 3,
+      },
+      660: {
+        slidesPerView: 2,
+
+      },
 
 
 
-
-
- 
-
-
-
-
-
+    }
+});
 
 
 
@@ -101,18 +112,47 @@ var mySwiper = new Swiper('.cards-slider-product', {
 
 
 /**
-function come(elem) {
-  var docViewTop = $(window).scrollTop(),
-    docViewBottom = docViewTop + $(window).height(),
-    elemTop = $(elem).offset().top,
-    elemBottom = elemTop + $(elem).height();
+ * 
+ * 
+$(window).scroll(function(event){
+  let yum = $('.tame-line-wrap').offset().top;
+  let yum3 = $('.tame-line-wrap').height();
+  let yum2 = $(document).scrollTop();
+let yum4 = yum + yum3;
 
-  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
+console.log(yum);
+console.log(yum2);
+
+
+  if( yum < yum2 ){
+    console.log('еще вижу"""!!!')
+
+  }
+})
+
  */
-/**if($('#slider-limit')){
- 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  let filtersMe =  document.querySelector('#slider-limit-two');
 let filtersMee =  document.querySelector('#slider-limit');
@@ -665,7 +705,7 @@ if ( !multipleSupport ) {
   });
 } else if (condominium) {
  var mySwiper = new Swiper(".swiper-container-condominium", { 
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     height: 1100,
     autoHeight: true,
@@ -679,15 +719,20 @@ if ( !multipleSupport ) {
         980: {
           slidesPerView: 3,
         },
+        600: {
+          slidesPerView: 2,
+        },
       }
   });
 
 } else if(product){
   
-
   var galleryThumb = new Swiper('.gallery-thumbs-product', {
     spaceBetween: 20,
     slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
     breakpoints: {
       1210: {
         spaceBetween: 0,
@@ -699,8 +744,7 @@ if ( !multipleSupport ) {
   var galleryTop = new Swiper('.swiper-container-product', {
     spaceBetween: 10,
     slidesPerView: 1,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -711,6 +755,7 @@ if ( !multipleSupport ) {
   });  
 
 } 
+
 
 
 

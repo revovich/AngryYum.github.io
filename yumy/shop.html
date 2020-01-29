@@ -498,22 +498,51 @@
                 </a>
             </article>
         </div>
-        <aside class="aside-filter">
-            <div class="aside-filter-item">
-                <span class="aside-filter-item-price">Цена</span>
-            <div id="slider-limit"></div>
-			<div class="wrap-rage-price">
-                <span class="example-val" data-left="70000" id="slider-limit-value-min"></span>
-                <span> — </span>
-            <span class="example-val" data-right="70475000" id="slider-limit-value-max"></span>
+       <aside class="aside-filter shadow-block">
+        <form  class="main-form-blog">
+            <div class="form-item-blog">
+                <div class="aside-chek">
+                    <div class="popap-content-label-wrap">
+                        <input type="checkbox" id="phone" name='phone'>
+                        <label for="phone">Апартаменты</label>
+                        <input type="checkbox" id="WhatsApp" name='phone'>
+                        <label for="WhatsApp">Виллы</label>
+                        <input type="checkbox" id="Telegram" name='phone'>
+                        <label for="Telegram">Таунхаусы</label>
+                    </div>
+                </div>
+                <div class="aside-filter-item">
+                    <span class="aside-filter-item-price">Тип</span>
+                    <select id="year">
+                        <option value="2010">Рубрика</option>
+                        <option value="2011">Рубрика 1</option>
+                        <option value="2012">Рубрика 2</option>
+                        <option value="2013">Рбрика 4</option>
+                    </select>
+                </div>
+                <div class="aside-filter-item">
+                    <span class="aside-filter-item-price">Цена от</span>
+                <div id="slider-limit"></div>
+                <div class="wrap-rage-price">
+                    <span class="example-val" data-left="70000" id="slider-limit-value-min"></span>
+                    <span> — </span>
+                <span class="example-val" data-right="70475000" id="slider-limit-value-max"></span>
+                </div>
+                </div>
+                <div class="aside-filter-item">
+                    <span class="aside-filter-item-price">Цена</span>
+                <div id="slider-limit-two"></div>
+                <div class="wrap-rage-price">
+                    <span class="example-val" data-left-bot="70000" id="slider-limit-value-bot"></span>
+                    <span> — </span>
+                <span class="example-val" data-right-bot="70475000" id="slider-limit-value-top"></span>
+                </div>
+                </div>
+                </div>
+                
             </div>
-            </div>
-            
-
-
-             
-            
-        </aside>
+        </form>
+       </aside>
        </div>
     </div>
 </main>
