@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автопилот</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="body">
+    
+    <!--header start-->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo" class="logo_img">
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <!--Активный пункт меню класс 'nav_active' на тег li-->
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="header_btn">Купить</a>
+            </div>
+        </div>
+    </header>
+
+     <!--header end-->
+
+<main class="basket">
+    <div class="wrapper">
+        <div class="basket_content">
+     <div class="">
+        <div class="basket_card">
+            <h1 class="basket_title">Корзина</h1>
+            <div class="basket_card_wrapper">
+                <div class="basket_card_item">
+                    <div class="basket_card_item_img">
+                        <a href="#">
+                            <img src="img/card.png" alt="">
+                        </a>
+                    </div>
+                    <div class="basket_card_item_info">
+                        <div class="basket_card_item_info_description">
+                            <p>Описание</p>
+                        </div>
+                            <h2 class="basket_card_item_info_title">Чехол автомобильный Бренд</h2>
+                            <div class="basket_card_item_info_price">6000 руб.</div>
+                            <div class="basket_card_item_info_description">
+                                <span>Черный</span>
+                            </div>
+                    </div>
+                    <div class="basket_card_item_quantity">
+                        <div class="basket_card_item_quantity_title">Кол-во</div>
+                        <select>
+                            <option value="2">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="basket_card_item_delete">
+                        <button class="basket_card_item_delete_btn">
+                            <img src="img/svg/delete.svg" alt="delete">
+                        </button>
+                    </div>
+                </div>
+                <div class="basket_card_item">
+                    <div class="basket_card_item_img">
+                        <a href="#">
+                            <img src="img/card.png" alt="">
+                        </a>
+                    </div>
+                    <div class="basket_card_item_info">
+                        <div class="basket_card_item_info_description">
+                            <p>Описание</p>
+                        </div>
+                            <h2 class="basket_card_item_info_title">Чехол автомобильный Бренд</h2>
+                            <div class="basket_card_item_info_price">6000 руб.</div>
+                            <div class="basket_card_item_info_description">
+                                <span>Черный</span>
+                            </div>
+                    </div>
+                    <div class="basket_card_item_quantity">
+                        <div class="basket_card_item_quantity_title">Кол-во</div>
+                        <select>
+                            <option value="2">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="basket_card_item_delete">
+                        <button class="basket_card_item_delete_btn">
+                            <img src="img/svg/delete.svg" alt="delete">
+                        </button>
+                    </div>
+                </div>
+                <div class="basket_card_item">
+                    <div class="basket_card_item_img">
+                        <a href="#">
+                            <img src="img/card.png" alt="">
+                        </a>
+                    </div>
+                    <div class="basket_card_item_info">
+                        <div class="basket_card_item_info_description">
+                            <p>Описание</p>
+                        </div>
+                            <h2 class="basket_card_item_info_title">Чехол автомобильный Бренд</h2>
+                            <div class="basket_card_item_info_price">6000 руб.</div>
+                            <div class="basket_card_item_info_description">
+                                <span>Черный</span>
+                            </div>
+                    </div>
+                    <div class="basket_card_item_quantity">
+                        <div class="basket_card_item_quantity_title">Кол-во</div>
+                        <select>
+                            <option value="2">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="basket_card_item_delete">
+                        <button class="basket_card_item_delete_btn">
+                            <img src="img/svg/delete.svg" alt="delete">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basket_card">
+            <h2 class="basket_title  basket_application">Оформление заказа</h2>
+            <div class="basket_application_wrapper">
+                <div class="basket_application_item">
+                    <h3 class="basket_application_title">Способ доставки</h3>
+                    <div class="basket_application_delivery">
+                        <label class="basket_application_delivery_item">
+                            <input type="checkbox">
+                            <span class="basket_application_delivery_text">Самовывоз</span>
+                        </label>
+                        <label class="basket_application_delivery_item">
+                            <input type="checkbox">
+                            <span class="basket_application_delivery_text">До пункта выдачи</span>
+                        </label>
+                        <label class="basket_application_delivery_item">
+                            <input type="checkbox">
+                            <span class="basket_application_delivery_text">До двери</span>
+                        </label>
+                    </div>
+                    <div class="basket_application_delivery_select">
+                        <select>
+                            <option value="hide">Выберите пункт</option>
+                            <option value="2">Мосва</option>
+                            <option value="2">Киев</option>
+                            <option value="3">Питер</option>
+                            <option value="4">Ужгород</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="basket_application_item">
+                    <h3 class="basket_application_title">Способ доставки</h3>
+                    <div class="form">
+                        <input type="text" class="form_input" placeholder="Имя">
+                        <input type="text" class="form_input" placeholder="Фамилия">
+                        <input type="text"  class="form_input" placeholder="Номер получиталя">
+                    </div>
+                </div>
+
+                <div class="basket_application_item">
+                    <h3 class="basket_application_title">Способ оплаты</h3>
+                    <div class="basket_application_delivery_select">
+                        <select>
+                            <option value="hide">Выберите способ оплаты</option>
+                            <option value="2">яндекс</option>
+                            <option value="2">киви</option>
+                            <option value="3">нал</option>
+                            <option value="4">безнал</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="basket_card">
+                <h2 class="product-recommendation_title">Возможно, вам понравится</h2>
+                <div class="swiper-container swiper-basket">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-recommendation_card">
+                                <a href="#" class="product-recommendation_card_link">
+                                    <div class="product-recommendation_card_img">
+                                        <img src="img/card.png" alt="">
+                                    </div>
+                                    <h3 class="product-recommendation_card_title">Чехол автомобильный Бренд</h3>
+                                    <div class="product-recommendation_card_price">3000 руб.</div>
+                                </a>
+                                <a href="#" class="product-recommendation_card_btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+     <div class="basket_aside">
+        <div class="basket_card">
+            <h2 class="basket_title">Итого:</h2>
+            <div class="basket_card_wrapper">
+                <div class="basket_card_item basket_payment_item">
+                    <div class="basket_payment_card">
+                        <span class="basket_payment_name">Всего:</span>
+                        <span class="basket_payment_info">24000</span>
+                    </div>
+                    <div class="basket_payment_card">
+                        <span class="basket_payment_name">Доставка:</span>
+                        <span class="basket_payment_info">Бесплатно</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="basket_aside_btn">Перейти к оплате</a>
+        </div>
+     </div>
+        </div>
+    </div>
+</main>
+
+
+
+<footer class="footer">
+<div class="wrapper">
+    <div class="footer-content">
+    </div>
+</div>
+</footer>
+
+<script src="./script/main.js"></script>
+</body>
+</html>
