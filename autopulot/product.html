@@ -25,6 +25,15 @@
                 </nav>
                 <a href="#" class="header_btn">Купить</a>
             </div>
+            <div class="header-content_mob">
+                <div class="burger_menu">
+                    <span class="burger_menu_line"></span>
+                </div>
+                <div class="basket_header">
+                    <img src="img/svg/basket.svg" alt="" class="basket_header_img">
+                    <span class="basket_header_namber">19</span>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -162,7 +171,10 @@
                             <button class="product-card_right_like">
                                 <img src="img/svg/like.svg" alt="like">
                             </button>
-                            <button class="product-card_right_bay">Добавить в корзину</button>
+                           <div class="product-card_right_btn_animate">
+                            <button class="product-card_right_bay" id="add_basket">Добавить в корзину</button>
+                            <a href="#" class="product-card_right_link">Перейти вкарзину</a>
+                           </div>
                         </div>
                         <div class="product-card_right_type">
                             <div class="product-card_right_info_title">
@@ -366,6 +378,10 @@
     </div>
 </div>
 </footer>
+
+<div class="dark-wrapper">
+    
+</div>
 
 <script src="./script/main.js"></script>
 </body>
