@@ -47,6 +47,7 @@
             <h1 class="basket_title">Корзина</h1>
             <div class="basket_card_wrapper">
                 <div class="basket_card_item basket_card_item_top">
+                    <form action="" class="basket_card_form">
                     <div class="basket_card_item_img">
                         <a href="#">
                             <img src="img/card.png" alt="">
@@ -76,8 +77,10 @@
                             <img src="img/svg/delete.svg" alt="delete">
                         </button>
                     </div>
+                   </form>
                 </div>
                 <div class="basket_card_item basket_card_item_top">
+                    <form action="" class="basket_card_form">
                     <div class="basket_card_item_img">
                         <a href="#">
                             <img src="img/card.png" alt="">
@@ -107,8 +110,10 @@
                             <img src="img/svg/delete.svg" alt="delete">
                         </button>
                     </div>
+                   </form>
                 </div>
                 <div class="basket_card_item basket_card_item_top">
+                    <form action="" class="basket_card_form">
                     <div class="basket_card_item_img">
                         <a href="#">
                             <img src="img/card.png" alt="">
@@ -138,16 +143,17 @@
                             <img src="img/svg/delete.svg" alt="delete">
                         </button>
                     </div>
+                   </form>
                 </div>
             </div>
         </div>
         <div class="basket_card">
             <h2 class="basket_title  basket_application">Оформление заказа</h2>
             <div class="basket_application_wrapper">
+                <form action="" id="basket">
                 <div class="basket_application_item">
                     <h3 class="basket_application_title">Способ доставки</h3>
                     <div class="basket_application_delivery">
-                        <form action="">
                             <label class="basket_application_delivery_item">
                             <input type="radio" name="delivery">
                             <span class="basket_application_delivery_text">Самовывоз</span>
@@ -168,7 +174,7 @@
                                 <option value="3">До двери</option>
                             </select>
                         </div>
-                        </form>
+
                     </div>
                     <div class="basket_application_delivery_select">
                         <select>
@@ -202,6 +208,7 @@
                         </select>
                     </div>
                 </div>
+            </form>
             </div>
             </div>
             <div class="basket_card">
@@ -397,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="basket_aside_btn">Перейти к оплате</a>
+            <a href="#" class="basket_aside_btn" form="basket">Перейти к оплате</a>
         </div>
      </div>
         </div>

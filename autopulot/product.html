@@ -118,6 +118,7 @@
                         <div class="product-card_right_price">6000 руб. <span>(-51%)</span></div>
                         <div class="product-card_right_delivery">Бесплатная доставка</div>
                         <div class="product-card_right_info">
+                            <form action="" id="product">
                             <div class="product-card_right_type">
                                 <div class="product-card_right_info_title">
                                     Подходит для:
@@ -134,13 +135,13 @@
                                 </div>
                                 <div class="product-card_right_color">
                                     <label class="product-card_right_color_item">
-                                        <input type="checkbox">
+                                        <input type="radio" name="color">
                                         <span class="product-card_right_color_checked"
                                             style="background: linear-gradient(136deg, #000000 50%, blue 50%)"></span>
                                         <span class="product-card_right_color_text">Синий/ черный</span>
                                     </label>
                                     <label class="product-card_right_color_item">
-                                        <input type="checkbox">
+                                        <input type="radio" name="color">
                                         <span class="product-card_right_color_checked"
                                             style="background: linear-gradient(136deg, red 50%, blue 50%)"></span>
                                         <span class="product-card_right_color_text">Красный/ черный</span>
@@ -153,26 +154,29 @@
                                 </div>
                                 <div class="product-card_right_color">
                                     <label class="product-card_right_color_item">
-                                        <input type="checkbox">
+                                        <input type="radio" name="material">
                                         <span class="product-card_right_color_checked"
                                             style="background: linear-gradient(136deg, #000000 50%, grey 50%)"></span>
                                         <span class="product-card_right_color_text">Кожа ткань</span>
                                     </label>
                                     <label class="product-card_right_color_item">
-                                        <input type="checkbox">
+                                        <input type="radio" name="material">
                                         <span class="product-card_right_color_checked"
                                             style="background: #CE5B5B"></span>
                                         <span class="product-card_right_color_text">Кожа жаккард</span>
                                     </label>
                                 </div>
                             </div>
+                        </form>
                         </div>
                         <div class="product-card_right_btn">
+                          <form action="">
                             <button class="product-card_right_like">
-                                <img src="img/svg/like.svg" alt="like">
+                                <img src="img/svg/like.png" alt="like">
                             </button>
+                          </form>
                            <div class="product-card_right_btn_animate">
-                            <button class="product-card_right_bay" id="add_basket">Добавить в корзину</button>
+                            <button class="product-card_right_bay" form="product">Добавить в корзину</button>
                             <a href="#" class="product-card_right_link">Перейти вкарзину</a>
                            </div>
                         </div>
